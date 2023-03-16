@@ -25,15 +25,17 @@ def main():
         email = email + tlds[tldpos]
         emails.append(email)
 
-    mailSet = random.sample(emails, 1000)
+    mailSet = random.sample(emails, 10)
     filterSize = 10000
     bloomFilter = BloomFilter(filterSize, mailSet)
 
-    goodMail = mailSet[500]
+    goodMail = mailSet[5]
     MaybeSpamEmail = emails[997]
 
     print(bloomFilter.filter(goodMail))
     print(bloomFilter.filter(MaybeSpamEmail))
+
+    print(bloomFilter.array)
 
 
 if __name__ == '__main__':
