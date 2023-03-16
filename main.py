@@ -1,13 +1,14 @@
-# This is a sample Python script.
+"""
+@authors
+Thomas Del Moro & Lorenzo Baiardi
+"""
 
-# Press Maiusc+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 import random
 from bloom_filter import BloomFilter
 
 def main():
     emails = []
-    for i in range(100000):
+    for i in range(1000000):
         validchars = 'abcdefghijklmnopqrstuvwxyz1234567890'
         loginlen = random.randint(4, 15)
         login = ''
@@ -25,7 +26,7 @@ def main():
         email = email + tlds[tldpos]
         emails.append(email)
 
-    mailSet = random.sample(emails, 10)
+    mailSet = random.sample(emails, 1000)
     filterSize = 10000
     bloomFilter = BloomFilter(filterSize, mailSet)
 
