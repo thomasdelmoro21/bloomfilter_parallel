@@ -3,28 +3,22 @@
 Thomas Del Moro & Lorenzo Baiardi
 """
 
-import random
 from bloom_filter import BloomFilter
+from generate_emails import generate_emails
+
 
 def main():
+    test_sizes = [10000, 100000]
+    for test_size in test_sizes:
+        mail_set = generate_emails(test_size)
+        bloom_filter = BloomFilter(mail_set)
 
-    mailSet = random.sample(emails, 1000)
-    filterSize = 10000
-    bloomFilter = BloomFilter(filterSize, mailSet)
+        with open(f'./email_{test_size}.txt', 'r') as f:
+            emails = f.read().splitlines()
 
-    goodMail = mailSet[5]
-    MaybeSpamEmail = emails[997]
+        filtered_emails = bloom_filter.filter_emails(emails)
 
-    with open('./email.txt', 'r') as f:
-        emails = f.read().splitlines()
-
-    print(emails)
-
-
-    print(bloomFilter.filter(goodMail))
-    print(bloomFilter.filter(MaybeSpamEmail))
-
-    print(bloomFilter.array)
+        print(filtered_emails)
 
 
 if __name__ == '__main__':

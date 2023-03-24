@@ -6,13 +6,14 @@ Thomas Del Moro & Lorenzo Baiardi
 import functools
 import math
 from bitarray import bitarray
-import re
 import mmh3
 
 
 class BloomFilter:
 
-    def __init__(self, size, set):
+    def __init__(self, set):
+        fpr = 0.01
+        size = int((len(set) * abs(math.log(fpr))) / (math.log(2) ** 2))
         self.array = bitarray(size)
         self.array.setall(0)
         self.size = size
@@ -61,9 +62,16 @@ class BloomFilter:
                 pos = hashFun(m) % len(self.array)
                 self.array[pos] = 1
 
-    def filter(self, m):
+    def filter_email(self, m):
         for hashFun in self.hashes:
             pos = hashFun(m) % len(self.array)
             if self.array[pos] == 0:
                 return False
         return True
+
+    def filter_emails(self, emails):
+        filtered_emails = []
+        for m in emails:
+            if self.filter_email(m):
+                filtered_emails.append(m)
+        return filtered_emails
