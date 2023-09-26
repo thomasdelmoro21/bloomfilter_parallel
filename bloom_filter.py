@@ -2,11 +2,12 @@
 @authors
 Thomas Del Moro & Lorenzo Baiardi
 """
-
 import functools
 import math
 from bitarray import bitarray
 import mmh3
+from joblib import Parallel, delayed
+import time
 
 
 class BloomFilter:
@@ -21,10 +22,23 @@ class BloomFilter:
     def setup(self, emails):
         self.num_hashes = int((self.size / len(emails)) * math.log(2))
         self.hashes = self.set_hashes(self.num_hashes)
-        for m in emails:
+        start = time.time()
+        for email in emails:
             for hashFun in self.hashes:
-                pos = hashFun(m) % len(self.array)
-                self.array[pos] = 1
+                self.array[hashFun(email) % len(self.array)] = 1
+        return time.time() - start
+
+    def parallel_setup(self, emails, n_threads):
+        self.num_hashes = int((self.size / len(emails)) * math.log(2))
+        self.hashes = self.set_hashes(self.num_hashes)
+        start = time.time()
+        with Parallel(n_jobs=n_threads) as parallel:
+            parallel(delayed(self.set_email)(email)for email in emails)
+        return time.time() - start
+
+    def set_email(self, email):
+        for hashFun in self.hashes:
+            self.array[hashFun(email) % len(self.array)] = 1
 
     def set_hashes(self, num_hashes):
         self.hashes = []
