@@ -32,8 +32,7 @@ class BloomFilter:
         self.num_hashes = int((self.size / len(emails)) * math.log(2))
         self.hashes = self.set_hashes(self.num_hashes)
         start = time.time()
-        with Parallel(n_jobs=n_threads) as parallel:
-            parallel(delayed(self.set_email)(email)for email in emails)
+        Parallel(n_jobs=n_threads)(delayed(self.set_email)(email)for email in emails)
         return time.time() - start
 
     def set_email(self, email):
