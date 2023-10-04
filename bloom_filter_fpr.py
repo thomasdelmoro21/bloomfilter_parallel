@@ -12,26 +12,30 @@ import time
 
 class BloomFilter:
 
-    def __init__(self, size):
-        self.size = size
-        self.array = bitarray(size)
-        self.array.setall(0)
+    def __init__(self, fpr):
+        self.size = 0
         self.num_hashes = 0
+        self.fpr = fpr
+        self.array = bitarray()
         self.hashes = []
 
-    def init_hashes(self, emails):
-        self.num_hashes = int((self.size / len(emails)) * math.log(2))
+    def initialize(self, emails):
+        n = len(emails)
+        self.size = math.ceil(-(n * math.log(self.fpr)) / (math.log(2) ** 2))
+        self.num_hashes = math.ceil((self.size / n) * math.log(2))
         self.hashes = self.set_hashes(self.num_hashes)
+        self.array = bitarray(self.size)
+        self.array.setall(0)
 
     def setup(self, emails):
-        self.init_hashes(emails)
+        self.initialize(emails)
         start = time.time()
         for email in emails:
             self.set_email(email)
         return time.time() - start
 
     def parallel_setup(self, emails, n_threads):
-        self.init_hashes(emails)
+        self.initialize(emails)
         start = time.time()
         Parallel(n_jobs=n_threads)(delayed(self.set_email)(email)for email in emails)
         return time.time() - start
@@ -46,20 +50,20 @@ class BloomFilter:
             self.hashes.append(functools.partial(mmh3.hash, seed=i))
         return self.hashes
 
-    def filter_all(self, emails):
-        errors = 0
-        for email in emails:
-            if self.filter(email):
-                # print("Email Passed")
-                errors += 1
-        return errors
-
     def filter(self, m):
         for hashFun in self.hashes:
             pos = hashFun(m) % len(self.array)
             if self.array[pos] == 0:
                 return False
         return True
+
+    def filter_all(self, emails):
+        errors = 0
+        for email in emails:
+            if self.filter(email):
+                print("Email Passed")
+                errors += 1
+        return errors
 
     def reset(self):
         self.array.setall(0)

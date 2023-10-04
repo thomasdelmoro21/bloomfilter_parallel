@@ -3,10 +3,10 @@
 Thomas Del Moro & Lorenzo Baiardi
 """
 
-import os
 import random
-
 import numpy as np
+
+from in_out_file import export_emails, export_spam_emails
 
 
 def main():
@@ -24,13 +24,8 @@ def main():
 
         print(np.in1d(spam_emails, emails))
 
-        with open(os.path.join(f'./dataset/emails/emails_{test_size}.txt'), 'w') as f:
-            for email in emails:
-                f.write(f"{email}\n")
-
-        with open(os.path.join(f'./dataset/spam/spam_{test_size}_{spam_size}.txt'), 'w') as f:
-            for email in spam_emails:
-                f.write(f"{email}\n")
+        export_emails(emails, test_size)
+        export_spam_emails(spam_emails, test_size, spam_size)
 
 
 def generation_email():
