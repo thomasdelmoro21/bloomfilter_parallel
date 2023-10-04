@@ -4,10 +4,15 @@ Thomas Del Moro & Lorenzo Baiardi
 """
 import functools
 import math
-from bitarray import bitarray
-import mmh3
-from joblib import Parallel, delayed
+import os
+import shutil
+import tempfile
 import time
+
+import mmh3
+import numpy as np
+from bitarray import bitarray
+from joblib import Parallel, delayed
 
 
 class BloomFilter:
@@ -33,7 +38,7 @@ class BloomFilter:
     def parallel_setup(self, emails, n_threads):
         self.init_hashes(emails)
         start = time.time()
-        Parallel(n_jobs=n_threads)(delayed(self.set_email)(email)for email in emails)
+        Parallel(n_jobs=n_threads)(delayed(self.set_email)(email) for email in emails)
         return time.time() - start
 
     def set_email(self, email):
@@ -65,3 +70,64 @@ class BloomFilter:
         self.array.setall(0)
         self.num_hashes = 0
         self.hashes = []
+
+
+class BloomFilterOptimized:
+    def __init__(self, fpr):
+        self.size = 0
+        self.num_hashes = 0
+        self.fpr = fpr
+        self.bit_array = np.arange(0)
+
+    def initialize(self, items):
+        n = len(items)
+        self.size = math.ceil(-(n * math.log(self.fpr)) / (math.log(2) ** 2))
+        self.num_hashes = math.ceil((self.size / n) * math.log(2))
+        self.bit_array = np.memmap('bitarray.mmap', dtype=bool, mode='w+', shape=(self.size,))
+        self.bit_array[:] = 0
+
+    def seq_setup(self, items):
+        self.reset()
+        self.initialize(items)
+        # Start sequential setup
+        start = time.time()
+        for item in items:
+            self.add(item)
+        return time.time() - start
+
+    def par_setup(self, items, n_threads):
+        self.reset()
+        self.initialize(items)
+        # Start parallel setup
+        start = time.time()
+        Parallel(n_jobs=n_threads)(delayed(self.add)(item) for item in items)
+        return time.time() - start
+
+    def add(self, item):
+        for i in range(self.num_hashes):
+            index = mmh3.hash(item, i) % self.size
+            self.bit_array[index] = True
+
+    def filter(self, item):
+        for i in range(self.num_hashes):
+            index = mmh3.hash(item, i) % self.size
+            if not self.bit_array[index]:
+                return False
+        return True
+
+    def filter_all(self, items):
+        errors = 0
+        for item in items:
+            if self.filter(item):
+                errors += 1
+        return errors
+
+    def reset(self):
+        self.size = 0
+        self.bit_array = np.arange(0)
+        self.num_hashes = 0
+        try:
+            shutil.rmtree(tempfile.mkdtemp())
+        except OSError:
+            pass
+

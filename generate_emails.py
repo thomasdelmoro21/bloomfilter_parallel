@@ -6,7 +6,7 @@ Thomas Del Moro & Lorenzo Baiardi
 import random
 import numpy as np
 
-from in_out_file import export_emails, export_spam_emails
+from manage_file import export_emails, export_spam_emails
 
 
 def main():
