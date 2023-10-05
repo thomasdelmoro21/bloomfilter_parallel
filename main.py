@@ -3,6 +3,7 @@
 Thomas Del Moro & Lorenzo Baiardi
 """
 import numpy as np
+from joblib import delayed, Parallel
 from matplotlib import pyplot as plt
 
 from bloom_filter import BloomFilter, BloomFilterOptimized

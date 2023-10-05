@@ -91,22 +91,24 @@ class BloomFilterOptimized:
         self.initialize(items)
         # Start sequential setup
         start = time.time()
-        for item in items:
-            self.add(item)
+        self.add(items)
         return time.time() - start
 
     def par_setup(self, items, n_threads):
         self.reset()
         self.initialize(items)
+        # Split items in chunks
+        chunks = np.array_split(items, n_threads)
         # Start parallel setup
         start = time.time()
-        Parallel(n_jobs=n_threads)(delayed(self.add)(item) for item in items)
+        Parallel(n_jobs=n_threads)(delayed(self.add)(chunk) for chunk in chunks)
         return time.time() - start
 
-    def add(self, item):
-        for i in range(self.num_hashes):
-            index = mmh3.hash(item, i) % self.size
-            self.bit_array[index] = True
+    def add(self, items):
+        for item in items:
+            for i in range(self.num_hashes):
+                index = mmh3.hash(item, i) % self.size
+                self.bit_array[index] = True
 
     def filter(self, item):
         for i in range(self.num_hashes):

@@ -5,6 +5,7 @@ Thomas Del Moro & Lorenzo Baiardi
 
 import random
 import numpy as np
+from joblib import Parallel, delayed
 
 from manage_file import export_emails, export_spam_emails
 
@@ -16,9 +17,11 @@ def main():
         print(test_size)
         emails = []
         spam_emails = []
+        # Parallel(n_jobs=-1)(delayed(emails.append(generation_email))() for i in range(test_size))
         for i in range(test_size):
             emails.append(generation_email())
 
+        # Parallel(n_jobs=-1)(delayed(spam_emails.append(generation_email))() for i in range(spam_size))
         for i in range(spam_size):
             spam_emails.append(generation_email())
 
