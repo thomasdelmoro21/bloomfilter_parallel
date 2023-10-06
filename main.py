@@ -20,11 +20,13 @@ def main():
         **{f'{time_par_key}{i}': [] for i in test_threads},
         **{f'{speedup_key}{i}': [] for i in test_threads}
     }
+    # Load emails
     emails = load_emails(emails_filename)
     spam_emails = load_emails(spams_filename)
-    print(f"**Number of cores/threads: {n_threads}**")
+
+    print(f"***NUMBER OF CORES/THREADS: {n_threads}***\n")
     for test in test_sizes:
-        print(f"TEST: {test}")
+        print(f"**TEST: {test}")
         test_emails = emails[:test]
         bloom_filter = BloomFilter(fpr)
 
@@ -59,8 +61,7 @@ def main():
         # False Positive Rate
         errors = bloom_filter.filter_all(spam_emails)
         v_fpr = errors / len(spam_emails)
-        print(f"Errors {errors} and FPR {v_fpr}")
-        print()
+        print(f"Errors {errors} and FPR {v_fpr}\n")
 
         # Save results
         save_results(results_filename, results, test, seq_time, par_times, speedups, v_fpr)
@@ -78,7 +79,8 @@ def save_results(filename, results, test, seq_time, par_times, speedups, v_fpr):
 
     # Save to csv
     with (open(filename, 'w', newline='') as csvfile):
-        headers = [test_key, time_seq_key, fpr_key] + [key for i in test_threads for key in [time_par_key+str(i), speedup_key+str(i)]]
+        headers = [test_key, time_seq_key, fpr_key]
+        headers += [key for i in test_threads for key in [time_par_key + str(i), speedup_key + str(i)]]
         writer = csv.DictWriter(csvfile, fieldnames=headers)
         writer.writeheader()
         [writer.writerow({header: results[header][i] for header in headers}) for i in range(len(results[test_key]))]
