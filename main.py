@@ -111,7 +111,7 @@ def plot_results(results):
     plt.subplot(1, 3, 3)
     plt.plot(results[test_key], results[fpr_key], marker='o', label='False Positive Rate')
     plt.xlabel('Test Sizes')
-    plt.ylabel('False Positive Rate (%)')
+    plt.ylabel('False Positive Rate')
     plt.title('FPR vs. Test Sizes')
     plt.legend()
 
