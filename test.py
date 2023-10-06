@@ -1,8 +1,14 @@
 import os
 
-test_sizes = [10**i for i in range(2, 7)]
+import numpy as np
+
+# Number of cores/threads
 n_threads = os.cpu_count()  # Number of cores/threads
-test_threads = range(2, n_threads+1, 2)  # Number of threads to test
+test_threads = np.linspace(2, n_threads, 4, dtype=int)  # Number of threads to test
+
+# Number of emails to test
+test_sizes = np.logspace(4, 8, 10, base=10, dtype=int)  # Number of emails to test
+
+# Bloom Filter
 fpr = 0.01  # False Positive Rate
-# filter_size = 8000000  # 8MB
 
