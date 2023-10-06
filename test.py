@@ -1,3 +1,8 @@
+"""
+@authors:
+Thomas Del Moro & Lorenzo Baiardi
+"""
+
 import os
 
 import numpy as np
@@ -11,4 +16,17 @@ test_sizes = np.logspace(4, 8, 10, base=10, dtype=int)  # Number of emails to te
 
 # Bloom Filter
 fpr = 0.01  # False Positive Rate
+
+# Results and dataset filenames
+results_filename = 'results/results.csv'
+bitarray_filename = 'results/bitarray.mmap'
+plot_filename = 'results/plot.png'
+
+
+# key value for the results dictionary
+test_key = 'test'
+time_seq_key = 'time_seq'
+fpr_key = 'fpr'
+time_par_key = 'time_par'
+speedup_key = 'speedup'
 

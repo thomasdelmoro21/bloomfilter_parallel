@@ -1,7 +1,8 @@
 """
-@authors
+@authors:
 Thomas Del Moro & Lorenzo Baiardi
 """
+
 import os
 import pickle
 import random
@@ -21,8 +22,8 @@ tlds = ['.com', '.net', '.org', '.info', '.it', '.eu', '.biz', '.gov', '.edu', '
 domains = ['@gmail', '@yahoo', '@hotmail', '@libero', '@icloud', '@outlook', '@protonmail', '@alice', '@tiscali',
            '@fastweb', '@virgilio', '@tim', '@vodafone', '@wind', '@telecom', '@poste']
 
-# Number of spam emails
-n_spam = 100000
+n_emails = max(test_sizes)  # Number of emails
+n_spam = 100000  # Number of spam emails
 
 
 def load_emails(filename):
@@ -51,46 +52,49 @@ def generate_email(spam=False):
         return f'{lp}@{random.choice(domains)}.{random.choice(tlds)}'
 
 
-def main():
-    n_emails = max(test_sizes)
-
-    print("SEQUENTIAL: Generating {} emails ".format(n_emails), end='')
-    start = time.time()
-    [generate_email() for _ in range(n_emails)]
-    t_seq = time.time() - start
-    print("in {} seconds".format(t_seq))
-
-    print("PARALLEL: Generating {} parallel emails ".format(n_emails), end='')
-    start = time.time()
-    emails = Parallel(n_jobs=-1)(delayed(generate_email)() for _ in range(n_emails))
-    t_par = time.time() - start
-    print("in {} seconds".format(t_par))
-
-    print("Speedup: {}".format(t_seq / t_par))
-
-    print("PARALLEL: Generating {} spam emails ".format(n_spam), end='')
-    start = time.time()
-    spam_emails = Parallel(n_jobs=-1)(delayed(generate_email)(True) for _ in range(n_spam))
-    spam_time = time.time() - start
-    print("in {} seconds".format(spam_time))
-
+def check_duplicates(emails, spam_emails):
     print("Checking for duplicates in the generated emails...")
-    print("Found {} duplicates".format(len(emails) - len(set(emails))))
+    print(f"Found {len(emails) - len(set(emails))} duplicates")
 
     print("Checking for duplicates...")
     check = np.in1d(spam_emails, emails)
-    print("Found {} spam emails in the generated emails".format(check.sum()))
+    print(f"Found {check.sum()} spam emails in the generated emails")
 
     print("Removing duplicates...")
     spam_emails = list(set(spam_emails) - set(emails))
-    print("Removed {} duplicates".format(check.sum()))
+    print(f"Removed {check.sum()} duplicates")
+    return emails, spam_emails
 
-    print("Exporting emails and spam emails...")
+
+def main():
+    print(f"SEQUENTIAL: Generating {n_emails} emails ", end='')
+    start = time.time()
+    [generate_email() for _ in range(n_emails)]
+    t_seq = time.time() - start
+    print(f"in {t_seq} seconds")
+
+    print(f"PARALLEL: Generating {n_emails} emails ", end='')
+    start = time.time()
+    emails = Parallel(n_jobs=-1)(delayed(generate_email)() for _ in range(n_emails))
+    t_par = time.time() - start
+    print(f"in {t_par} seconds")
+
+    print(f"Speedup: {t_seq / t_par}")
+
+    print(f"PARALLEL: Generating {n_spam} spam emails ", end='')
+    start = time.time()
+    spam_emails = Parallel(n_jobs=-1)(delayed(generate_email)(True) for _ in range(n_spam))
+    spam_time = time.time() - start
+    print(f"in {spam_time} seconds")
+
+    # check_duplicates(emails, spam_emails)
+
+    print("Exporting emails and spam emails...", end='')
     export_emails(emails, emails_filename)
     export_emails(spam_emails, spams_filename)
     print("Done!")
-    print("Exported {} emails to {}".format(len(emails), emails_filename))
-    print("Exported {} spam emails to {}".format(len(spam_emails), spams_filename))
+    print(f"Exported {len(emails)} emails to {emails_filename}")
+    print(f"Exported {len(spam_emails)} spam emails to {spams_filename}")
 
 
 if __name__ == '__main__':

@@ -1,7 +1,8 @@
 """
-@authors
+@authors:
 Thomas Del Moro & Lorenzo Baiardi
 """
+
 import math
 import shutil
 import tempfile
@@ -11,7 +12,7 @@ import mmh3
 import numpy as np
 from joblib import Parallel, delayed
 
-filename = 'dataset/bitarray.mmap'
+from test import bitarray_filename
 
 
 class BloomFilter:
@@ -26,8 +27,8 @@ class BloomFilter:
         n = len(items)
         self.size = math.ceil(-(n * math.log(self.fpr)) / (math.log(2) ** 2))
         self.n_hashes = math.ceil((self.size / n) * math.log(2))
-        self.bitarray = np.memmap(filename, dtype=bool, mode='w+', shape=(self.size,))
-        self.bitarray[:] = 0
+        self.bitarray = np.memmap(bitarray_filename, dtype=bool, mode='w+', shape=(self.size,))
+        self.bitarray[:] = False
 
     def seq_setup(self, items):
         self.initialize(items)
@@ -51,19 +52,19 @@ class BloomFilter:
                 index = mmh3.hash(item, i) % self.size
                 self.bitarray[index] = True
 
-    def filter(self, item):
-        for i in range(self.n_hashes):
-            index = mmh3.hash(item, i) % self.size
-            if not self.bitarray[index]:
-                return False
-        return True
-
     def filter_all(self, items):
         errors = 0
         for item in items:
             if self.filter(item):
                 errors += 1
         return errors
+
+    def filter(self, item):
+        for i in range(self.n_hashes):
+            index = mmh3.hash(item, i) % self.size
+            if not self.bitarray[index]:
+                return False
+        return True
 
     def reset(self):
         self.size = 0

@@ -1,7 +1,8 @@
 """
-@authors
+@authors:
 Thomas Del Moro & Lorenzo Baiardi
 """
+
 import csv
 
 from matplotlib import pyplot as plt
@@ -10,14 +11,15 @@ from bloom_filter import BloomFilter
 from email_generator import emails_filename, load_emails, spams_filename
 from test import *
 
-results_filename = 'results/results.csv'
-
 
 def main():
-    results = {'test': [], 'time_seq': [], 'fpr': []}
-    for i in test_threads:
-        results['time_par'+str(i)] = []
-        results['speedup'+str(i)] = []
+    results = {
+        test_key: [],
+        time_seq_key: [],
+        fpr_key: [],
+        **{f'{time_par_key}{i}': [] for i in test_threads},
+        **{f'{speedup_key}{i}': [] for i in test_threads}
+    }
     emails = load_emails(emails_filename)
     spam_emails = load_emails(spams_filename)
     print(f"**Number of cores/threads: {n_threads}**")
@@ -67,28 +69,19 @@ def main():
 
 
 def save_results(filename, results, test, seq_time, par_times, speedups, v_fpr):
-    # Save results to dict
-    results['test'].append(test)
-    results['time_seq'].append(seq_time)
-    results['fpr'].append(v_fpr)
-    for i in test_threads:
-        results['time_par'+str(i)].append(par_times[i])
-        results['speedup'+str(i)].append(speedups[i])
+    # Save results
+    results[test_key].append(test)
+    results[time_seq_key].append(seq_time)
+    results[fpr_key].append(v_fpr)
+    [results[time_par_key + str(i)].append(par_times[i]) for i in test_threads]
+    [results[speedup_key + str(i)].append(speedups[i]) for i in test_threads]
 
-    with open(filename, 'w', newline='') as csvfile:
-        headers = ['test', 'time_seq', 'fpr']
-        for i in test_threads:
-            headers.append('time_par'+str(i))
-            headers.append('speedup'+str(i))
-
+    # Save to csv
+    with (open(filename, 'w', newline='') as csvfile):
+        headers = [test_key, time_seq_key, fpr_key] + [key for i in test_threads for key in [time_par_key+str(i), speedup_key+str(i)]]
         writer = csv.DictWriter(csvfile, fieldnames=headers)
         writer.writeheader()
-
-        for i in range(len(results['test'])):
-            row = {}
-            for header in headers:
-                row[header] = results[header][i]
-            writer.writerow(row)
+        [writer.writerow({header: results[header][i] for header in headers}) for i in range(len(results[test_key]))]
 
 
 def plot_results(results):
@@ -97,33 +90,33 @@ def plot_results(results):
 
     # Plot times
     plt.subplot(1, 3, 1)
-    plt.plot(results['test'], results['time_seq'], marker='o', label='Sequential')
+    plt.plot(results[test_key], results[time_seq_key], marker='o', label='Sequential')
     for i in test_threads:
-        plt.plot(results['test'], results['time_par'+str(i)], marker='o', label=f'Parallel {i} Threads')
+        plt.plot(results[test_key], results[time_par_key+str(i)], marker='o', label=f'Parallel {i} Threads')
     plt.xlabel('Test Sizes')
     plt.ylabel('Time (seconds)')
-    plt.title(f'Time vs. Test Sizes)')
+    plt.title('Time vs. Test Sizes)')
     plt.legend()
 
     # Plot speedup
     plt.subplot(1, 3, 2)
     for i in test_threads:
-        plt.plot(results['test'], results['speedup'+str(i)], marker='o', label=f'Parallel {i} Threads')
+        plt.plot(results[test_key], results[speedup_key+str(i)], marker='o', label=f'Parallel {i} Threads')
     plt.xlabel('Test Sizes')
     plt.ylabel('Speedup')
-    plt.title(f'Speedup vs. Test Sizes')
+    plt.title('Speedup vs. Test Sizes')
     plt.legend()
 
     # Plot false positive rate
     plt.subplot(1, 3, 3)
-    plt.plot(results['test'], results['fpr'], marker='o', label='False Positive Rate')
+    plt.plot(results[test_key], results[fpr_key], marker='o', label='False Positive Rate')
     plt.xlabel('Test Sizes')
     plt.ylabel('False Positive Rate (%)')
-    plt.title(f'FPR vs. Test Sizes')
+    plt.title('FPR vs. Test Sizes')
     plt.legend()
 
     plt.tight_layout()
-    plt.savefig('plots/result.png')
+    plt.savefig(plot_filename)
     plt.show()
 
 
