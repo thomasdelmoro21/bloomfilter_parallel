@@ -52,12 +52,25 @@ class BloomFilter:
                 index = mmh3.hash(item, i) % self.size
                 self.bitarray[index] = True
 
-    def filter_all(self, items):
+    def filter_all_seq(self, items):
         errors = 0
+        start = time.time()
         for item in items:
             if self.filter(item):
                 errors += 1
-        return errors
+        return time.time() - start, errors
+
+    def filter_all_par(self, items, n_threads):
+        errors = 0
+        # Split items in chunks
+        chunks = np.array_split(items, n_threads)
+        # Start parallel setup
+        start = time.time()
+        results = Parallel(n_jobs=n_threads)(delayed(self.filter_all_seq)(chunk) for chunk in chunks)
+        end_time = time.time() - start
+        t, errs = zip(*results)
+        errors = sum(errs)
+        return end_time, errors
 
     def filter(self, item):
         for i in range(self.n_hashes):

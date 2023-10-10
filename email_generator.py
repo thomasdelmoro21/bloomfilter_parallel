@@ -12,7 +12,7 @@ import time
 import numpy as np
 from joblib import Parallel, delayed
 
-from test import test_sizes
+from test import test_sizes, spam_sizes
 
 emails_filename = os.path.join('dataset/emails.pkl')
 spams_filename = os.path.join('dataset/spams.pkl')
@@ -23,7 +23,7 @@ domains = ['@gmail', '@yahoo', '@hotmail', '@libero', '@icloud', '@outlook', '@p
            '@fastweb', '@virgilio', '@tim', '@vodafone', '@wind', '@telecom', '@poste']
 
 n_emails = max(test_sizes)  # Number of emails
-n_spam = 100000  # Number of spam emails
+n_spam = max(spam_sizes)  # Number of spam emails
 
 
 def load_emails(filename):
