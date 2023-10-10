@@ -22,6 +22,7 @@ fpr = 0.01  # False Positive Rate
 results_filename = 'results/results.csv'
 bitarray_filename = 'results/bitarray.mmap'
 plot_filename = 'results/plot.png'
+
 plot_time_filename = 'results/plot_time.png'
 plot_speedup_filename = 'results/plot_speedup.png'
 plot_fpr_filename = 'results/plot_fpr.png'
