@@ -19,8 +19,8 @@ spams_filename = os.path.join('dataset/spams.pkl')
 
 punctuation = '.-_'
 tlds = ['.com', '.net', '.org', '.info', '.it', '.eu', '.biz', '.gov', '.edu', '.co.uk', '.de', '.fr', '.es']
-domains = ['@gmail', '@yahoo', '@hotmail', '@libero', '@icloud', '@outlook', '@protonmail', '@alice', '@tiscali',
-           '@fastweb', '@virgilio', '@tim', '@vodafone', '@wind', '@telecom', '@poste']
+domains = ['gmail', 'yahoo', 'hotmail', 'libero', 'icloud', 'outlook', 'protonmail', 'alice', 'tiscali',
+           'fastweb', 'virgilio', 'tim', 'vodafone', 'wind', 'telecom', 'poste']
 
 n_emails = max(test_sizes)  # Number of emails
 n_spam = max(spam_sizes)  # Number of spam emails
