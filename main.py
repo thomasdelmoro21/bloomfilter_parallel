@@ -166,7 +166,7 @@ def plot_results(results, filter=False):
             plt.plot(results[test_key], results[time_par_key + str(i)], marker='o', label=f'Parallel {i} Threads')
         plt.xlabel('Test Sizes')
         plt.ylabel('Time (seconds)')
-        plt.title('Time vs. Test Sizes)')
+        plt.title('Time vs. Test Sizes')
         plt.legend()
 
         # Plot speedup
