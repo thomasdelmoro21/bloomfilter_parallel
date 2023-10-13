@@ -77,14 +77,14 @@ def main():
         test_emails = spam_emails[:test]
 
         print(f"Filter Sequential: ", end='')
-        seq_filter_time, seq_errors = bloom_filter.filter_all_seq(test_emails)
+        seq_filter_time, seq_errors = bloom_filter.seq_filter_all(test_emails)
         print(f"{seq_filter_time} seconds")
 
         par_filter_times = {}
         filter_speedups = {}
         for threads in test_threads:
             print(f"Filter Parallel with {threads} threads: ", end='')
-            par_filter_time, par_errors = bloom_filter.filter_all_par(test_emails, threads)
+            par_filter_time, par_errors = bloom_filter.par_filter_all(test_emails, threads)
             print(f"{par_filter_time} seconds")
             speedup = seq_filter_time / par_filter_time
             print(f"Speedup with {threads} threads {speedup}")
@@ -102,6 +102,7 @@ def main():
                      v_fpr)
 
     plot_results(filter_results, filter=True)
+
 
 def save_results(filename, results, test, seq_time, par_times, speedups, v_fpr=None):
     # Save results

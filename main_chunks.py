@@ -14,6 +14,7 @@ from test import *
 n_threads = os.cpu_count()
 test_chunks = [n_threads, n_threads*2, n_threads*4, n_threads*8, n_threads*16, n_threads*32, n_threads*64]
 
+
 def main():
     setup_results = {
         test_key: [],
@@ -44,7 +45,7 @@ def main():
         speedups = {}
         for chunks in test_chunks:
             print(f"Parallel with {chunks} chunks: ", end='')
-            par_setup_time = bloom_filter.par_setup(test_emails, 8)
+            par_setup_time = bloom_filter.par_setup(test_emails, n_threads)
             print(f"{par_setup_time} seconds")
 
             # Speedup
@@ -65,6 +66,7 @@ def main():
 
     plot_results(setup_results)
 
+
 def save_results(filename, results, test, seq_time, par_times, speedups):
     # Save results
     results[test_key].append(test)
@@ -79,6 +81,7 @@ def save_results(filename, results, test, seq_time, par_times, speedups):
         writer = csv.DictWriter(csvfile, fieldnames=headers)
         writer.writeheader()
         [writer.writerow({header: results[header][i] for header in headers}) for i in range(len(results[test_key]))]
+
 
 def plot_results(results, filter=False):
     print(results)
@@ -104,6 +107,7 @@ def plot_results(results, filter=False):
     plt.tight_layout()
     plt.savefig(plot_chunks_filename)
     plt.show()
+
 
 if __name__ == '__main__':
     main()
