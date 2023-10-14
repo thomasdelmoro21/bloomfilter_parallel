@@ -14,8 +14,8 @@ from joblib import Parallel, delayed
 
 from test import test_sizes, spam_sizes
 
-emails_filename = os.path.join('dataset/emails.pkl')
-spams_filename = os.path.join('dataset/spams.pkl')
+emails_filename = 'dataset/emails.pkl'
+spams_filename = 'dataset/spams.pkl'
 
 punctuation = '.-_'
 tlds = ['.com', '.net', '.org', '.info', '.it', '.eu', '.biz', '.gov', '.edu', '.co.uk', '.de', '.fr', '.es']
