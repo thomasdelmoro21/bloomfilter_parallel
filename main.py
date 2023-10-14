@@ -5,16 +5,17 @@ Thomas Del Moro & Lorenzo Baiardi
 
 from src.bloom_filter import BloomFilter
 from src.email_generator import emails_filename, load_emails, spams_filename
-from plot import save_results, plot_setup_results, plot_filter_results, plot_chunks_results
+from plot import save_results, plot_results
 from test import *
 
 
-def setup_test(bloom_filter, emails):
+def setup_test(bloom_filter, emails, spams):
     setup_results = {
         test_key: [],
         time_seq_key: [],
         **{f'{time_par_key}{i}': [] for i in test_threads},
-        **{f'{speedup_key}{i}': [] for i in test_threads}
+        **{f'{speedup_key}{i}': [] for i in test_threads},
+        fpr_key: []
     }
 
     print(f"***NUMBER OF CORES/THREADS: {n_threads}***\n")
@@ -50,10 +51,16 @@ def setup_test(bloom_filter, emails):
             par_times[threads] = par_setup_time
             speedups[threads] = speedup
 
-        # Save results
-        save_results(setup_results_filename, setup_results, test, seq_setup_time, test_threads, par_times, speedups)
+        # False positive rate
+        _, errors = bloom_filter.par_filter_all(spams, n_threads)
+        v_fpr = errors / len(spams)
+        print(f"Test on {len(spams)} spam emails with {errors} errors and FPR {v_fpr}\n")
 
-    plot_setup_results(setup_results, test_threads)
+        # Save results
+        save_results(setup_results_filename, setup_results, test, seq_setup_time,
+                     test_threads, par_times, speedups, v_fpr)
+
+    plot_results(setup_results, plot_setup_filename, test_threads)
 
 
 def filter_test(bloom_filter, spam_emails):
@@ -97,18 +104,19 @@ def filter_test(bloom_filter, spam_emails):
         v_fpr = seq_errors / len(test_emails)
         print(f"Errors {seq_errors} and FPR {v_fpr}\n")
 
-        save_results(filter_results_filename, filter_results, test, seq_filter_time, test_threads, par_filter_times,
-                     filter_speedups, v_fpr)
+        save_results(filter_results_filename, filter_results, test, seq_filter_time,
+                     test_threads, par_filter_times, filter_speedups, v_fpr)
 
-    plot_filter_results(filter_results, test_threads)
+    plot_results(filter_results, plot_filter_filename, test_threads)
 
 
-def chunks_setup_test(bloom_filter, emails):
+def chunks_setup_test(bloom_filter, emails, spams):
     setup_results = {
         test_key: [],
         time_seq_key: [],
         **{f'{time_par_key}{i}': [] for i in test_chunks},
-        **{f'{speedup_key}{i}': [] for i in test_chunks}
+        **{f'{speedup_key}{i}': [] for i in test_chunks},
+        fpr_key: []
     }
 
     print(f"***NUMBER OF CORES/THREADS: {n_threads}***\n")
@@ -128,7 +136,7 @@ def chunks_setup_test(bloom_filter, emails):
         speedups = {}
         for chunks in test_chunks:
             print(f"Parallel with {chunks} chunks: ", end='')
-            par_setup_time = bloom_filter.par_setup(test_emails, n_threads)
+            par_setup_time = bloom_filter.par_setup(test_emails, n_threads, chunks)
             print(f"{par_setup_time} seconds")
 
             # Speedup
@@ -144,25 +152,32 @@ def chunks_setup_test(bloom_filter, emails):
             par_times[chunks] = par_setup_time
             speedups[chunks] = speedup
 
-        # Save results
-        save_results(chunks_results_filename, setup_results, test, seq_setup_time, test_chunks, par_times, speedups)
+        # False positive rate
+        _, errors = bloom_filter.par_filter_all(spams, n_threads)
+        v_fpr = errors / len(spams)
+        print(f"Test on {len(spams)} spam emails with {errors} errors and FPR {v_fpr}\n")
 
-    plot_chunks_results(setup_results, test_chunks)
+        # Save results
+        save_results(chunks_results_filename, setup_results, test, seq_setup_time,
+                     test_chunks, par_times, speedups, v_fpr)
+
+    plot_results(setup_results, plot_chunks_filename, test_chunks)
 
 
 def main():
     emails = load_emails(emails_filename)
     spams = load_emails(spams_filename)
+
     bloom_filter = BloomFilter(fpr)
 
     # Setup
-    setup_test(bloom_filter, emails)
+    setup_test(bloom_filter, emails, spams[:test_spam_fpr])
 
     # Filter
     filter_test(bloom_filter, spams)
 
     # Chunks
-    chunks_setup_test(bloom_filter, emails)
+    chunks_setup_test(bloom_filter, emails, spams[:test_spam_fpr])
 
 
 if __name__ == '__main__':

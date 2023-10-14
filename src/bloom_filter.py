@@ -37,10 +37,10 @@ class BloomFilter:
         self.add(items)
         return time.time() - start
 
-    def par_setup(self, items, n_threads):
+    def par_setup(self, items, n_threads, chunks=None):
         self.initialize(items)
         # Split items in chunks
-        chunks = np.array_split(items, n_threads)
+        chunks = np.array_split(items, chunks if chunks else n_threads)
         # Start parallel setup
         start = time.time()
         Parallel(n_jobs=n_threads)(delayed(self.add)(chunk) for chunk in chunks)

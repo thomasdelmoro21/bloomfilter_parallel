@@ -13,7 +13,7 @@ n_threads = os.cpu_count()
 test_threads = np.linspace(2, n_threads, int(n_threads/2), dtype=int)  # Number of threads to test
 
 # Number of test
-tests = 4
+tests = 10
 
 # Number of emails to test setup
 test_sizes = np.linspace(1e4, 1e7, tests, dtype=int)  # Number of emails to test
@@ -22,10 +22,11 @@ test_sizes = np.linspace(1e4, 1e7, tests, dtype=int)  # Number of emails to test
 spam_sizes = np.linspace(1e4, 1e7, tests, dtype=int)
 
 # Number of chunks to test
-test_chunks = [n_threads * 2 ** i for i in range(7)]
+test_chunks = [(n_threads * 2 ** i) for i in range(8)]
 
 # Bloom Filter
 fpr = 0.01  # False Positive Rate
+test_spam_fpr = 1000  # Number of spam emails to test FPR
 
 # Filenames
 # Bitarray filename
