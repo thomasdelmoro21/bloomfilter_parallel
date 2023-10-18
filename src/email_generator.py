@@ -11,13 +11,11 @@ import time
 import numpy as np
 from joblib import Parallel, delayed
 
-from test import test_sizes, spam_sizes
+from test import test_sizes, spam_sizes, emails_filename, spams_filename
 
-emails_filename = '../dataset/emails.pkl'
-spams_filename = '../dataset/spams.pkl'
-
+base_email = "user{}@example.com"
 punctuation = '.-_'
-tlds = ['.com', '.net', '.org', '.info', '.it', '.eu', '.biz', '.gov', '.edu', '.co.uk', '.de', '.fr', '.es']
+tlds = ['com', 'net', 'org', 'info', 'it', 'eu', 'biz', 'gov', 'edu', 'co.uk', 'de', 'fr', 'es']
 domains = ['gmail', 'yahoo', 'hotmail', 'libero', 'icloud', 'outlook', 'protonmail', 'alice', 'tiscali',
            'fastweb', 'virgilio', 'tim', 'vodafone', 'wind', 'telecom', 'poste']
 
@@ -37,17 +35,12 @@ def export_emails(emails, filename):
 
 
 def generate_email(spam=False):
+    lp_length = random.randint(5, 40)
+    lp = ''.join(random.choice(string.ascii_letters + string.digits + punctuation)
+                 for _ in range(lp_length))
     if spam:
-        lp = 'SPAM'.join(random.choice(string.ascii_letters + string.digits + punctuation)
-                         for _ in range(random.randint(5, 40)))
-        return f'{lp}@{random.choice(domains)}.{random.choice(tlds)}'
+        return f'SPAM{lp}@{random.choice(domains)}.{random.choice(tlds)}'
     else:
-        while True:
-            lp_length = random.randint(5, 40)
-            lp = ''.join(random.choice(string.ascii_letters + string.digits + punctuation)
-                         for _ in range(lp_length))
-            if not lp[0].isdigit() and not lp[0] in punctuation and not lp[-1] in punctuation:
-                break
         return f'{lp}@{random.choice(domains)}.{random.choice(tlds)}'
 
 
@@ -68,7 +61,7 @@ def check_duplicates(emails, spam_emails):
 def main():
     print(f"SEQUENTIAL: Generating {n_emails} emails ", end='')
     start = time.time()
-    [generate_email() for _ in range(n_emails)]
+    emails = [generate_email() for _ in range(n_emails)]
     t_seq = time.time() - start
     print(f"in {t_seq} seconds")
 

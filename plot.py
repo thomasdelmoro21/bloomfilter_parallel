@@ -23,7 +23,7 @@ def save_results(filename, results, test, seq_time, tests, par_times, speedups, 
 
 
 def plot_results(results, filename, tests):
-    print(results)
+    # print(results)
     fig, (times, speedups, fprs) = plt.subplots(1, 3, figsize=(24, 8))
 
     # Plot times
@@ -53,6 +53,6 @@ def plot_results(results, filename, tests):
     # Save plot
     plt.tight_layout()
     plt.savefig(filename)
-    plt.show()
+    # plt.show()
 
 

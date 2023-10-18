@@ -16,7 +16,7 @@ from test import bitarray_filename
 
 
 class BloomFilter:
-    def __init__(self, fpr):
+    def __init__(self, fpr=0.01):
         self.size = 0
         self.n_hashes = 0
         self.fpr = fpr
@@ -27,11 +27,12 @@ class BloomFilter:
         n = len(items)
         self.size = math.ceil(-(n * math.log(self.fpr)) / (math.log(2) ** 2))
         self.n_hashes = math.ceil((self.size / n) * math.log(2))
-        self.bitarray = np.memmap(bitarray_filename, dtype=bool, mode='w+', shape=(self.size,))
+        self.bitarray = np.memmap(bitarray_filename, dtype=bool, mode='w+', shape=self.size)
         self.bitarray[:] = False
 
     def seq_setup(self, items):
         self.initialize(items)
+
         # Start sequential setup
         start = time.time()
         self.add(items)
@@ -39,8 +40,10 @@ class BloomFilter:
 
     def par_setup(self, items, n_threads, chunks=None):
         self.initialize(items)
+
         # Split items in chunks
         chunks = np.array_split(items, chunks if chunks else n_threads)
+
         # Start parallel setup
         start = time.time()
         Parallel(n_jobs=n_threads)(delayed(self.add)(chunk) for chunk in chunks)
@@ -54,6 +57,8 @@ class BloomFilter:
 
     def seq_filter_all(self, items):
         errors = 0
+
+        # Start sequential filter
         start = time.time()
         for item in items:
             if self.filter(item):
@@ -63,10 +68,13 @@ class BloomFilter:
     def par_filter_all(self, items, n_threads):
         # Split items in chunks
         chunks = np.array_split(items, n_threads)
+
         # Start parallel setup
         start = time.time()
         results = Parallel(n_jobs=n_threads)(delayed(self.seq_filter_all)(chunk) for chunk in chunks)
         end_time = time.time() - start
+
+        # Sum errors
         t, errs = zip(*results)
         errors = sum(errs)
         return end_time, errors
