@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.10.31)  2 NOV 2023 12:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.10.31)  7 NOV 2023 15:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -387,706 +387,1399 @@ Package hyperref Info: Link coloring OFF on input line 19.
  [1
 
 {C:/Users/loreb/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-(C:/Users\loreb\Documents\IntellijProjects\PycharmProjects\bloomfilter_parallel
-\auxil\relation.toc)
-\tf@toc=\write5
-\openout5 = `relation.toc'.
-
+<../documentation/img/pycode/pycode (1).png, id=43, 589.4522pt x 216.05719pt>
+File: ../documentation/img/pycode/pycode (1).png Graphic file (type png)
+<use ../documentation/img/pycode/pycode (1).png>
+Package pdftex.def Info: ../documentation/img/pycode/pycode (1).png  used on in
+put line 55.
+(pdftex.def)             Requested size: 360.0pt x 131.95622pt.
+<../documentation/img/pycode/pycode (2).png, id=45, 282.30469pt x 102.3825pt>
+File: ../documentation/img/pycode/pycode (2).png Graphic file (type png)
+<use ../documentation/img/pycode/pycode (2).png>
+Package pdftex.def Info: ../documentation/img/pycode/pycode (2).png  used on in
+put line 56.
+(pdftex.def)             Requested size: 360.0pt x 130.56953pt.
+<../documentation/img/pycode/pycode (3).png, id=46, 464.4853pt x 167.87718pt>
+File: ../documentation/img/pycode/pycode (3).png Graphic file (type png)
+<use ../documentation/img/pycode/pycode (3).png>
+Package pdftex.def Info: ../documentation/img/pycode/pycode (3).png  used on in
+put line 57.
+(pdftex.def)             Requested size: 360.0pt x 130.11627pt.
+<../documentation/img/pycode/pycode (4).png, id=47, 304.51265pt x 84.315pt>
+File: ../documentation/img/pycode/pycode (4).png Graphic file (type png)
+<use ../documentation/img/pycode/pycode (4).png>
+Package pdftex.def Info: ../documentation/img/pycode/pycode (4).png  used on in
+put line 58.
+(pdftex.def)             Requested size: 360.0pt x 99.68121pt.
  [2
 
-] [3
-
-] [4
-
-] [5
-
-]
-relation.tex:75: Missing $ inserted.
-<inserted text> 
-                $
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:75: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:75: Missing $ inserted.
-<inserted text> 
-                $
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:75: Missing } inserted.
-<inserted text> 
-                }
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-relation.tex:75: Missing $ inserted.
-<inserted text> 
-                $
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:75: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:75: Missing $ inserted.
-<inserted text> 
-                $
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:75: Missing } inserted.
-<inserted text> 
-                }
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-relation.tex:75: Missing $ inserted.
-<inserted text> 
-                $
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:75: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:75: Missing $ inserted.
-<inserted text> 
-                $
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:75: Missing } inserted.
-<inserted text> 
-                }
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-relation.tex:75: Missing $ inserted.
-<inserted text> 
-                $
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:75: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:75: Missing $ inserted.
-<inserted text> 
-                $
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:75: Missing } inserted.
-<inserted text> 
-                }
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-relation.tex:76: Missing $ inserted.
-<inserted text> 
-                $
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:76: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:76: Missing $ inserted.
-<inserted text> 
-                $
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:76: Missing } inserted.
-<inserted text> 
-                }
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-relation.tex:76: Missing $ inserted.
-<inserted text> 
-                $
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:76: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:76: Missing $ inserted.
-<inserted text> 
-                $
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:76: Missing } inserted.
-<inserted text> 
-                }
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-relation.tex:76: Missing $ inserted.
-<inserted text> 
-                $
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:76: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:76: Missing $ inserted.
-<inserted text> 
-                $
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:76: Missing } inserted.
-<inserted text> 
-                }
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-relation.tex:76: Missing $ inserted.
-<inserted text> 
-                $
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:76: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:76: Missing $ inserted.
-<inserted text> 
-                $
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:76: Missing } inserted.
-<inserted text> 
-                }
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Missing } inserted.
-<inserted text> 
-                }
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Missing } inserted.
-<inserted text> 
-                }
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Missing } inserted.
-<inserted text> 
-                }
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Missing } inserted.
-<inserted text> 
-                }
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Missing } inserted.
-<inserted text> 
-                }
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Missing } inserted.
-<inserted text> 
-                }
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Missing } inserted.
-<inserted text> 
-                }
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Missing } inserted.
-<inserted text> 
-                }
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Missing } inserted.
-<inserted text> 
-                }
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (533.35936pt too wide) in paragraph at lines 75--78
-[]
- []
-
-
-Overfull \hbox (610.00945pt too wide) in paragraph at lines 75--78
-[]
- []
-
-
-Overfull \hbox (1641.9023pt too wide) in paragraph at lines 75--78
-[] 
- []
-
-[6
-
-]
-<../results/plots//plot_setup.png, id=90, 1734.48pt x 578.16pt>
+] [3 <../documentation/img/pycode/pycode (1).png> <../documentation/img/pycode/
+pycode (2).png> <../documentation/img/pycode/pycode (3).png>]
+File: ../documentation/img/pycode/pycode (1).png Graphic file (type png)
+<use ../documentation/img/pycode/pycode (1).png>
+Package pdftex.def Info: ../documentation/img/pycode/pycode (1).png  used on in
+put line 65.
+(pdftex.def)             Requested size: 360.0pt x 131.95622pt.
+<../results/plots//plot_setup.png, id=65, 1734.48pt x 578.16pt>
 File: ../results/plots//plot_setup.png Graphic file (type png)
 <use ../results/plots//plot_setup.png>
-Package pdftex.def Info: ../results/plots//plot_setup.png  used on input line 8
-0.
+Package pdftex.def Info: ../results/plots//plot_setup.png  used on input line 7
+4.
 (pdftex.def)             Requested size: 360.0pt x 119.99684pt.
-<../results/plots//plot_filter.png, id=92, 1734.48pt x 578.16pt>
+<../results/plots//plot_filter.png, id=66, 1734.48pt x 578.16pt>
 File: ../results/plots//plot_filter.png Graphic file (type png)
 <use ../results/plots//plot_filter.png>
 Package pdftex.def Info: ../results/plots//plot_filter.png  used on input line 
-81.
+75.
 (pdftex.def)             Requested size: 360.0pt x 119.99684pt.
-<../results/plots//plot_chunks.png, id=93, 1734.48pt x 578.16pt>
+<../results/plots//plot_chunks.png, id=67, 1734.48pt x 578.16pt>
 File: ../results/plots//plot_chunks.png Graphic file (type png)
 <use ../results/plots//plot_chunks.png>
 Package pdftex.def Info: ../results/plots//plot_chunks.png  used on input line 
+76.
+(pdftex.def)             Requested size: 360.0pt x 119.99684pt.
+File: ../results/plots//plot_setup.png Graphic file (type png)
+<use ../results/plots//plot_setup.png>
+Package pdftex.def Info: ../results/plots//plot_setup.png  used on input line 8
+1.
+(pdftex.def)             Requested size: 360.0pt x 119.99684pt.
+File: ../results/plots//plot_filter.png Graphic file (type png)
+<use ../results/plots//plot_filter.png>
+Package pdftex.def Info: ../results/plots//plot_filter.png  used on input line 
 82.
 (pdftex.def)             Requested size: 360.0pt x 119.99684pt.
- [7] [8 <../results/plots//plot_setup.png> <../results/plots//plot_filter.png> 
-<../results/plots//plot_chunks.png>] [9
+File: ../results/plots//plot_chunks.png Graphic file (type png)
+<use ../results/plots//plot_chunks.png>
+Package pdftex.def Info: ../results/plots//plot_chunks.png  used on input line 
+83.
+(pdftex.def)             Requested size: 360.0pt x 119.99684pt.
 
-]
+[4 <../documentation/img/pycode/pycode (4).png>] [5 <../results/plots//plot_set
+up.png> <../results/plots//plot_filter.png> <../results/plots//plot_chunks.png>
+] [6]
+relation.tex:93: Missing $ inserted.
+<inserted text> 
+                $
+l.93 ... \csvautotabular{../results/csv/setup.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:93: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.93 ... \csvautotabular{../results/csv/setup.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:93: Missing $ inserted.
+<inserted text> 
+                $
+l.93 ... \csvautotabular{../results/csv/setup.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:93: Missing } inserted.
+<inserted text> 
+                }
+l.93 ... \csvautotabular{../results/csv/setup.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:93: Missing $ inserted.
+<inserted text> 
+                $
+l.93 ... \csvautotabular{../results/csv/setup.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:93: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.93 ... \csvautotabular{../results/csv/setup.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:93: Missing $ inserted.
+<inserted text> 
+                $
+l.93 ... \csvautotabular{../results/csv/setup.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:93: Missing } inserted.
+<inserted text> 
+                }
+l.93 ... \csvautotabular{../results/csv/setup.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:93: Missing $ inserted.
+<inserted text> 
+                $
+l.93 ... \csvautotabular{../results/csv/setup.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:93: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.93 ... \csvautotabular{../results/csv/setup.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:93: Missing $ inserted.
+<inserted text> 
+                $
+l.93 ... \csvautotabular{../results/csv/setup.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:93: Missing } inserted.
+<inserted text> 
+                }
+l.93 ... \csvautotabular{../results/csv/setup.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:93: Missing $ inserted.
+<inserted text> 
+                $
+l.93 ... \csvautotabular{../results/csv/setup.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:93: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.93 ... \csvautotabular{../results/csv/setup.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:93: Missing $ inserted.
+<inserted text> 
+                $
+l.93 ... \csvautotabular{../results/csv/setup.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:93: Missing } inserted.
+<inserted text> 
+                }
+l.93 ... \csvautotabular{../results/csv/setup.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:94: Missing $ inserted.
+<inserted text> 
+                $
+l.94 ...\csvautotabular{../results/csv/filter.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:94: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.94 ...\csvautotabular{../results/csv/filter.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:94: Missing $ inserted.
+<inserted text> 
+                $
+l.94 ...\csvautotabular{../results/csv/filter.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:94: Missing } inserted.
+<inserted text> 
+                }
+l.94 ...\csvautotabular{../results/csv/filter.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:94: Missing $ inserted.
+<inserted text> 
+                $
+l.94 ...\csvautotabular{../results/csv/filter.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:94: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.94 ...\csvautotabular{../results/csv/filter.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:94: Missing $ inserted.
+<inserted text> 
+                $
+l.94 ...\csvautotabular{../results/csv/filter.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:94: Missing } inserted.
+<inserted text> 
+                }
+l.94 ...\csvautotabular{../results/csv/filter.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:94: Missing $ inserted.
+<inserted text> 
+                $
+l.94 ...\csvautotabular{../results/csv/filter.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:94: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.94 ...\csvautotabular{../results/csv/filter.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:94: Missing $ inserted.
+<inserted text> 
+                $
+l.94 ...\csvautotabular{../results/csv/filter.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:94: Missing } inserted.
+<inserted text> 
+                }
+l.94 ...\csvautotabular{../results/csv/filter.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:94: Missing $ inserted.
+<inserted text> 
+                $
+l.94 ...\csvautotabular{../results/csv/filter.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:94: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.94 ...\csvautotabular{../results/csv/filter.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:94: Missing $ inserted.
+<inserted text> 
+                $
+l.94 ...\csvautotabular{../results/csv/filter.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:94: Missing } inserted.
+<inserted text> 
+                }
+l.94 ...\csvautotabular{../results/csv/filter.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:95: Missing $ inserted.
+<inserted text> 
+                $
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:95: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:95: Missing $ inserted.
+<inserted text> 
+                $
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:95: Missing } inserted.
+<inserted text> 
+                }
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:95: Missing $ inserted.
+<inserted text> 
+                $
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:95: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:95: Missing $ inserted.
+<inserted text> 
+                $
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:95: Missing } inserted.
+<inserted text> 
+                }
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:95: Missing $ inserted.
+<inserted text> 
+                $
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:95: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:95: Missing $ inserted.
+<inserted text> 
+                $
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:95: Missing } inserted.
+<inserted text> 
+                }
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:95: Missing $ inserted.
+<inserted text> 
+                $
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:95: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:95: Missing $ inserted.
+<inserted text> 
+                $
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:95: Missing } inserted.
+<inserted text> 
+                }
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:95: Missing $ inserted.
+<inserted text> 
+                $
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:95: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:95: Missing $ inserted.
+<inserted text> 
+                $
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:95: Missing } inserted.
+<inserted text> 
+                }
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:95: Missing $ inserted.
+<inserted text> 
+                $
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:95: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:95: Missing $ inserted.
+<inserted text> 
+                $
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:95: Missing } inserted.
+<inserted text> 
+                }
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:95: Missing $ inserted.
+<inserted text> 
+                $
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:95: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:95: Missing $ inserted.
+<inserted text> 
+                $
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:95: Missing } inserted.
+<inserted text> 
+                }
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:95: Missing $ inserted.
+<inserted text> 
+                $
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:95: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:95: Missing $ inserted.
+<inserted text> 
+                $
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:95: Missing } inserted.
+<inserted text> 
+                }
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:95: Missing $ inserted.
+<inserted text> 
+                $
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:95: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:95: Missing $ inserted.
+<inserted text> 
+                $
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:95: Missing } inserted.
+<inserted text> 
+                }
+l.95 ...\csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (533.35936pt too wide) in paragraph at lines 93--96
+[][]
+ []
+
+
+Overfull \hbox (610.00945pt too wide) in paragraph at lines 93--96
+[]
+ []
+
+
+Overfull \hbox (1641.9023pt too wide) in paragraph at lines 93--96
+[] 
+ []
+
+relation.tex:100: Missing $ inserted.
+<inserted text> 
+                $
+l.100 ...\csvautotabular{../results/csv/setup.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:100: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.100 ...\csvautotabular{../results/csv/setup.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:100: Missing $ inserted.
+<inserted text> 
+                $
+l.100 ...\csvautotabular{../results/csv/setup.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:100: Missing } inserted.
+<inserted text> 
+                }
+l.100 ...\csvautotabular{../results/csv/setup.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:100: Missing $ inserted.
+<inserted text> 
+                $
+l.100 ...\csvautotabular{../results/csv/setup.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:100: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.100 ...\csvautotabular{../results/csv/setup.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:100: Missing $ inserted.
+<inserted text> 
+                $
+l.100 ...\csvautotabular{../results/csv/setup.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:100: Missing } inserted.
+<inserted text> 
+                }
+l.100 ...\csvautotabular{../results/csv/setup.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:100: Missing $ inserted.
+<inserted text> 
+                $
+l.100 ...\csvautotabular{../results/csv/setup.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:100: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.100 ...\csvautotabular{../results/csv/setup.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:100: Missing $ inserted.
+<inserted text> 
+                $
+l.100 ...\csvautotabular{../results/csv/setup.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:100: Missing } inserted.
+<inserted text> 
+                }
+l.100 ...\csvautotabular{../results/csv/setup.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:100: Missing $ inserted.
+<inserted text> 
+                $
+l.100 ...\csvautotabular{../results/csv/setup.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:100: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.100 ...\csvautotabular{../results/csv/setup.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:100: Missing $ inserted.
+<inserted text> 
+                $
+l.100 ...\csvautotabular{../results/csv/setup.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:100: Missing } inserted.
+<inserted text> 
+                }
+l.100 ...\csvautotabular{../results/csv/setup.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:101: Missing $ inserted.
+<inserted text> 
+                $
+l.101 ...csvautotabular{../results/csv/filter.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:101: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.101 ...csvautotabular{../results/csv/filter.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:101: Missing $ inserted.
+<inserted text> 
+                $
+l.101 ...csvautotabular{../results/csv/filter.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:101: Missing } inserted.
+<inserted text> 
+                }
+l.101 ...csvautotabular{../results/csv/filter.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:101: Missing $ inserted.
+<inserted text> 
+                $
+l.101 ...csvautotabular{../results/csv/filter.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:101: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.101 ...csvautotabular{../results/csv/filter.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:101: Missing $ inserted.
+<inserted text> 
+                $
+l.101 ...csvautotabular{../results/csv/filter.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:101: Missing } inserted.
+<inserted text> 
+                }
+l.101 ...csvautotabular{../results/csv/filter.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:101: Missing $ inserted.
+<inserted text> 
+                $
+l.101 ...csvautotabular{../results/csv/filter.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:101: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.101 ...csvautotabular{../results/csv/filter.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:101: Missing $ inserted.
+<inserted text> 
+                $
+l.101 ...csvautotabular{../results/csv/filter.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:101: Missing } inserted.
+<inserted text> 
+                }
+l.101 ...csvautotabular{../results/csv/filter.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:101: Missing $ inserted.
+<inserted text> 
+                $
+l.101 ...csvautotabular{../results/csv/filter.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:101: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.101 ...csvautotabular{../results/csv/filter.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:101: Missing $ inserted.
+<inserted text> 
+                $
+l.101 ...csvautotabular{../results/csv/filter.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:101: Missing } inserted.
+<inserted text> 
+                }
+l.101 ...csvautotabular{../results/csv/filter.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:102: Missing $ inserted.
+<inserted text> 
+                $
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:102: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:102: Missing $ inserted.
+<inserted text> 
+                $
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:102: Missing } inserted.
+<inserted text> 
+                }
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:102: Missing $ inserted.
+<inserted text> 
+                $
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:102: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:102: Missing $ inserted.
+<inserted text> 
+                $
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:102: Missing } inserted.
+<inserted text> 
+                }
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:102: Missing $ inserted.
+<inserted text> 
+                $
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:102: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:102: Missing $ inserted.
+<inserted text> 
+                $
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:102: Missing } inserted.
+<inserted text> 
+                }
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:102: Missing $ inserted.
+<inserted text> 
+                $
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:102: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:102: Missing $ inserted.
+<inserted text> 
+                $
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:102: Missing } inserted.
+<inserted text> 
+                }
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:102: Missing $ inserted.
+<inserted text> 
+                $
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:102: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:102: Missing $ inserted.
+<inserted text> 
+                $
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:102: Missing } inserted.
+<inserted text> 
+                }
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:102: Missing $ inserted.
+<inserted text> 
+                $
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:102: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:102: Missing $ inserted.
+<inserted text> 
+                $
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:102: Missing } inserted.
+<inserted text> 
+                }
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:102: Missing $ inserted.
+<inserted text> 
+                $
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:102: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:102: Missing $ inserted.
+<inserted text> 
+                $
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:102: Missing } inserted.
+<inserted text> 
+                }
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:102: Missing $ inserted.
+<inserted text> 
+                $
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:102: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:102: Missing $ inserted.
+<inserted text> 
+                $
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:102: Missing } inserted.
+<inserted text> 
+                }
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:102: Missing $ inserted.
+<inserted text> 
+                $
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:102: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+relation.tex:102: Missing $ inserted.
+<inserted text> 
+                $
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:102: Missing } inserted.
+<inserted text> 
+                }
+l.102 ...csvautotabular{../results/csv/chunks.csv}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (533.35936pt too wide) in paragraph at lines 100--103
+[][]
+ []
+
+
+Overfull \hbox (610.00945pt too wide) in paragraph at lines 100--103
+[]
+ []
+
+
+Overfull \hbox (1641.9023pt too wide) in paragraph at lines 100--103
+[] 
+ []
+
+[7] [8] [9]
 (C:/Users\loreb\Documents\IntellijProjects\PycharmProjects\bloomfilter_parallel
 \auxil\relation.aux)
 
@@ -1098,31 +1791,30 @@ Package rerunfilecheck Warning: File `relation.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `relation.out':
-(rerunfilecheck)             Before: CAFD7B5E76F0E1F6E9C4701C1D23F0A9;988
-(rerunfilecheck)             After:  15D4D451CA6FE0B57FD582F70B096E1D;1247.
+(rerunfilecheck)             Before: 0603EC7C013C225A1B5CE4A767F69748;793
+(rerunfilecheck)             After:  A28E37CFCB787939C655E9F199DAE957;793.
  ) 
 Here is how much of TeX's memory you used:
- 10753 strings out of 476331
- 185956 string characters out of 5787764
- 1902660 words of memory out of 5000000
- 31014 multiletter control sequences out of 15000+600000
- 518356 words of font info for 53 fonts, out of 8000000 for 9000
+ 10786 strings out of 476331
+ 187600 string characters out of 5787764
+ 1929660 words of memory out of 5000000
+ 31047 multiletter control sequences out of 15000+600000
+ 518048 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,77p,409b,436s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,9n,77p,413b,474s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/loreb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmbx10.pfb><C:/Users/loreb/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb><C:/Users/loreb/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmmi10.pfb><C:/Users/loreb/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/loreb/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/loreb/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/loreb/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/loreb/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/l
-oreb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+cmbx12.pfb><C:/Users/loreb/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmmi10.pfb><C:/Users/loreb/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmmi8.pfb><C:/Users/loreb/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/loreb/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/loreb/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/loreb/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/loreb/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 Output written on C:/Users\loreb\Documents\IntellijProjects\PycharmProjects\blo
-omfilter_parallel\out\relation.pdf (9 pages, 596701 bytes).
+omfilter_parallel\out\relation.pdf (9 pages, 730012 bytes).
 PDF statistics:
- 159 PDF objects out of 1000 (max. 8388607)
- 26 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 143 PDF objects out of 1000 (max. 8388607)
+ 24 named destinations out of 1000 (max. 500000)
+ 100 words of extra memory for PDF output out of 10000 (max. 10000000)
 
