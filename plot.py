@@ -9,9 +9,9 @@ def save_results(filename, results, test, seq_time, tests, par_times, speedups, 
     # Save results
     results[test_key].append(test)
     results[time_seq_key].append(seq_time)
-    [results[time_par_key + str(i)].append(par_times[i]) for i in tests]
-    [results[speedup_key + str(i)].append(speedups[i]) for i in tests]
-    results[fpr_key].append(v_fpr)
+    [results[time_par_key + str(i)].append(round(par_times[i], 3)) for i in tests]  # Limit to 3 decimal digits
+    [results[speedup_key + str(i)].append(round(speedups[i], 3)) for i in tests]  # Limit to 3 decimal digits
+    results[fpr_key].append(round(v_fpr, 3))  # Limit to 3 decimal digits
 
     # Save to csv
     with (open(filename, 'w', newline='') as csvfile):
@@ -24,35 +24,41 @@ def save_results(filename, results, test, seq_time, tests, par_times, speedups, 
 
 def plot_results(results, filename, tests):
     # print(results)
-    fig, (times, speedups, fprs) = plt.subplots(1, 3, figsize=(24, 8))
 
     # Plot times
-    times.plot(results[test_key], results[time_seq_key], marker='o', label='Sequential')
+    plt.figure()
+    plt.plot(results[test_key], results[time_seq_key], marker='o', label='Sequential')
     for i in tests:
-        times.plot(results[test_key], results[time_par_key + str(i)], marker='o', label=f'Parallel {i}')
-    times.set_xlabel('Test Sizes')
-    times.set_ylabel('Time (seconds)')
-    times.set_title('Time vs. Test Sizes')
-    times.legend()
+        plt.plot(results[test_key], results[time_par_key + str(i)], marker='o', label=f'Parallel {i}')
+    plt.xlabel('Test Sizes')
+    plt.ylabel('Time (seconds)')
+    plt.title('Time vs. Test Sizes')
+    plt.legend()
+    plt.tight_layout()
+    plt.savefig(filename + 'time.png')
+    # plt.show()
 
     # Plot speedup
+    plt.figure()
     for i in tests:
-        speedups.plot(results[test_key], results[speedup_key + str(i)], marker='o', label=f'Parallel {i}')
-    speedups.set_xlabel('Test Sizes')
-    speedups.set_ylabel('Speedup')
-    speedups.set_title('Speedup vs. Test Sizes')
-    speedups.legend()
+        plt.plot(results[test_key], results[speedup_key + str(i)], marker='o', label=f'Parallel {i}')
+    plt.xlabel('Test Sizes')
+    plt.ylabel('Speedup')
+    plt.title('Speedup vs. Test Sizes')
+    plt.legend()
+    plt.tight_layout()
+    plt.savefig(filename + 'speedup.png')
+    # plt.show()
 
     # Plot false positive rate
-    fprs.plot(results[test_key], results[fpr_key], marker='o', label='False Positive Rate')
-    fprs.set_xlabel('Test Sizes')
-    fprs.set_ylabel('False Positive Rate')
-    fprs.set_title('FPR vs. Test Sizes')
-    fprs.legend()
-
-    # Save plot
+    plt.figure()
+    plt.plot(results[test_key], results[fpr_key], marker='o', label='False Positive Rate')
+    plt.xlabel('Test Sizes')
+    plt.ylabel('False Positive Rate')
+    plt.title('FPR vs. Test Sizes')
+    plt.legend()
     plt.tight_layout()
-    plt.savefig(filename)
+    plt.savefig(filename + 'fpr.png')
     # plt.show()
 
 

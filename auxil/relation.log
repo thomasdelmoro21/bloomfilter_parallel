@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.10.31)  2 NOV 2023 12:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.10.31)  10 NOV 2023 14:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -116,6 +116,13 @@ File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen150
 \Gin@req@width=\dimen151
+) (C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count271
+\float@exts=\toks22
+\float@box=\box53
+\@float@everytoks=\toks23
+\@floatcapt=\box54
 )
 (C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/latex/csvsimple\csvsimple.sty
 
@@ -127,8 +134,8 @@ Package: expl3 2023-03-30 L3 programming layer (loader)
 (C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2023-03-30 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count271
-\l__pdf_internal_box=\box53
+\l__color_backend_stack_int=\count272
+\l__pdf_internal_box=\box55
 ))
 Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
 )
@@ -142,13 +149,13 @@ Package: csvsimple-legacy 2023/10/16 version 2.5.0 LaTeX2e CSV file processing
 y
 (C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -common.tex
-\pgfutil@everybye=\toks22
+\pgfutil@everybye=\toks24
 \pgfutil@tempdima=\dimen152
 \pgfutil@tempdimb=\dimen153
 )
 (C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -latex.def
-\pgfutil@abb=\box54
+\pgfutil@abb=\box56
 )
 (C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
 code.tex
@@ -159,28 +166,28 @@ Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ty
 (C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
 .code.tex
-\pgfkeys@pathtoks=\toks23
-\pgfkeys@temptoks=\toks24
+\pgfkeys@pathtoks=\toks25
+\pgfkeys@temptoks=\toks26
 
 (C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
 libraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks25
+\pgfkeys@tmptoks=\toks27
 )))
 (C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
 (C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count272
+\etb@tempcnta=\count273
 )
 (C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/latex/tools\shellesc.sty
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 77.
 )
 \csv@file=\read2
-\c@csvinputline=\count273
-\c@csvrow=\count274
-\c@csvcol=\count275
+\c@csvinputline=\count274
+\c@csvrow=\count275
+\c@csvcol=\count276
 \csv@out=\write3
 )
 (C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
@@ -238,11 +245,11 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count276
+\c@section@level=\count277
 )
 \@linkdim=\dimen154
-\Hy@linkcounter=\count277
-\Hy@pagecounter=\count278
+\Hy@linkcounter=\count278
+\Hy@pagecounter=\count279
  (C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2023-02-07 v7.00v Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -253,7 +260,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count279
+\Hy@SavedSpaceFactor=\count280
  (C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2023-02-07 v7.00v Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -266,7 +273,7 @@ Package hyperref Info: Plain pages OFF on input line 4192.
 Package hyperref Info: Backreferencing OFF on input line 4197.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4425.
-\c@Hy@tempcnt=\count280
+\c@Hy@tempcnt=\count281
 
 (C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
@@ -283,7 +290,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count281
+\Fld@menulength=\count282
 \Field@Width=\dimen156
 \Fld@charsize=\dimen157
 Package hyperref Info: Hyper figures OFF on input line 6042.
@@ -298,9 +305,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6072.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count282
-\c@Item=\count283
-\c@Hfootnote=\count284
+\Hy@abspage=\count283
+\c@Item=\count284
+\c@Hfootnote=\count285
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 (C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
@@ -311,8 +318,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count285
-\c@bookmark@seq@number=\count286
+\Fld@listcount=\count286
+\c@bookmark@seq@number=\count287
 
 (C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
 echeck.sty
@@ -327,43 +334,132 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip53
 )
+(C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count288
+\lst@gtempboxa=\box57
+\lst@token=\toks28
+\lst@length=\count289
+\lst@currlwidth=\dimen158
+\lst@column=\count290
+\lst@pos=\count291
+\lst@lostspace=\dimen159
+\lst@width=\dimen160
+\lst@newlines=\count292
+\lst@lineno=\count293
+\lst@maxwidth=\dimen161
+
+(C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count294
+\lst@skipnumbers=\count295
+\lst@framebox=\box58
+)
+(C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2023/02/27 1.9 listings configuration
+))
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
+(C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+
+(C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+(C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+)
+(C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+
+(C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen162
+\captionmargin=\dimen163
+\caption@leftmargin=\dimen164
+\caption@rightmargin=\dimen165
+\caption@width=\dimen166
+\caption@indent=\dimen167
+\caption@parindent=\dimen168
+\caption@hangindent=\dimen169
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count296
+\c@continuedfloat=\count297
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count298
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count299
+) (C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/latex/mdwtools\mdwtab.sty
+Package: mdwtab 1998/04/28 1.9 Table typesetting with style
+\tab@state=\count300
+\tab@columns=\count301
+\tab@preamble=\toks29
+\tab@shortline=\toks30
+\extrarowheight=\dimen170
+\tabextrasep=\dimen171
+\arrayextrasep=\dimen172
+\smarraycolsep=\dimen173
+\smarrayextrasep=\dimen174
+\tab@width=\dimen175
+\col@sep=\dimen176
+\tab@endheight=\dimen177
+\tab@leftskip=\skip54
+\tab@rightskip=\skip55
+\fn@notes=\box59
+\fn@width=\dimen178
+)
 (C:/Users\loreb\Documents\IntellijProjects\PycharmProjects\bloomfilter_parallel
 \auxil\relation.aux)
 \openout1 = `relation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
 
 (C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count287
-\scratchdimen=\dimen158
-\scratchbox=\box55
-\nofMPsegments=\count288
-\nofMParguments=\count289
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count290
-\MPscratchDim=\dimen159
-\MPnumerator=\count291
-\makeMPintoPDFobject=\count292
-\everyMPtoPDFconversion=\toks27
+\scratchcounter=\count302
+\scratchdimen=\dimen179
+\scratchbox=\box60
+\nofMPsegments=\count303
+\nofMParguments=\count304
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count305
+\MPscratchDim=\dimen180
+\MPnumerator=\count306
+\makeMPintoPDFobject=\count307
+\everyMPtoPDFconversion=\toks32
 )
 (C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -375,7 +471,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 19.
+Package hyperref Info: Link coloring OFF on input line 49.
 
 (C:/Users\loreb\Documents\IntellijProjects\PycharmProjects\bloomfilter_parallel
 \auxil\relation.out)
@@ -384,663 +480,201 @@ Package hyperref Info: Link coloring OFF on input line 19.
 \@outlinefile=\write4
 \openout4 = `relation.out'.
 
+\c@lstlisting=\count308
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
  [1
 
 {C:/Users/loreb/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-(C:/Users\loreb\Documents\IntellijProjects\PycharmProjects\bloomfilter_parallel
-\auxil\relation.toc)
-\tf@toc=\write5
-\openout5 = `relation.toc'.
+(C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 86.
 
- [2
+(../src/bloom_filter.py [2
 
-] [3
+]) (../src/bloom_filter.py) (../src/bloom_filter.py
+[3]) (../src/bloom_filter.py)
+<../results/plots//plot_setup_time.png, id=102, 462.528pt x 346.896pt>
+File: ../results/plots//plot_setup_time.png Graphic file (type png)
+<use ../results/plots//plot_setup_time.png>
+Package pdftex.def Info: ../results/plots//plot_setup_time.png  used on input l
+ine 140.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+File: ../results/plots//plot_setup_time.png Graphic file (type png)
+<use ../results/plots//plot_setup_time.png>
+Package pdftex.def Info: ../results/plots//plot_setup_time.png  used on input l
+ine 144.
+(pdftex.def)             Requested size: 161.9989pt x 121.5001pt.
+<../results/plots//plot_setup_speedup.png, id=104, 462.528pt x 346.896pt>
+File: ../results/plots//plot_setup_speedup.png Graphic file (type png)
+<use ../results/plots//plot_setup_speedup.png>
+Package pdftex.def Info: ../results/plots//plot_setup_speedup.png  used on inpu
+t line 152.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+File: ../results/plots//plot_setup_speedup.png Graphic file (type png)
+<use ../results/plots//plot_setup_speedup.png>
+Package pdftex.def Info: ../results/plots//plot_setup_speedup.png  used on inpu
+t line 156.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+ [4]
+<../results/plots//plot_setup_fpr.png, id=131, 462.528pt x 346.896pt>
+File: ../results/plots//plot_setup_fpr.png Graphic file (type png)
+<use ../results/plots//plot_setup_fpr.png>
+Package pdftex.def Info: ../results/plots//plot_setup_fpr.png  used on input li
+ne 164.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+File: ../results/plots//plot_setup_fpr.png Graphic file (type png)
+<use ../results/plots//plot_setup_fpr.png>
+Package pdftex.def Info: ../results/plots//plot_setup_fpr.png  used on input li
+ne 168.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+ [5 <../results/plots//plot_setup_time.png>]
+<../results/plots//plot_filter_time.png, id=145, 462.528pt x 346.896pt>
+File: ../results/plots//plot_filter_time.png Graphic file (type png)
+<use ../results/plots//plot_filter_time.png>
+Package pdftex.def Info: ../results/plots//plot_filter_time.png  used on input 
+line 178.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+File: ../results/plots//plot_filter_time.png Graphic file (type png)
+<use ../results/plots//plot_filter_time.png>
+Package pdftex.def Info: ../results/plots//plot_filter_time.png  used on input 
+line 182.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+<../results/plots//plot_filter_speedup.png, id=146, 462.528pt x 346.896pt>
+File: ../results/plots//plot_filter_speedup.png Graphic file (type png)
+<use ../results/plots//plot_filter_speedup.png>
+Package pdftex.def Info: ../results/plots//plot_filter_speedup.png  used on inp
+ut line 190.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+File: ../results/plots//plot_filter_speedup.png Graphic file (type png)
+<use ../results/plots//plot_filter_speedup.png>
+Package pdftex.def Info: ../results/plots//plot_filter_speedup.png  used on inp
+ut line 194.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
 
-] [4
-
-] [5
-
-]
-relation.tex:75: Missing $ inserted.
+[6 <../results/plots//plot_setup_speedup.png> <../results/plots//plot_setup_fpr
+.png>]
+<../results/plots//plot_filter_fpr.png, id=155, 462.528pt x 346.896pt>
+File: ../results/plots//plot_filter_fpr.png Graphic file (type png)
+<use ../results/plots//plot_filter_fpr.png>
+Package pdftex.def Info: ../results/plots//plot_filter_fpr.png  used on input l
+ine 202.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+File: ../results/plots//plot_filter_fpr.png Graphic file (type png)
+<use ../results/plots//plot_filter_fpr.png>
+Package pdftex.def Info: ../results/plots//plot_filter_fpr.png  used on input l
+ine 206.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+ [7 <../results/plots//plot_filter_time.png> <../results/plots//plot_filter_spe
+edup.png>]
+<../results/plots//plot_chunks_time.png, id=166, 462.528pt x 346.896pt>
+File: ../results/plots//plot_chunks_time.png Graphic file (type png)
+<use ../results/plots//plot_chunks_time.png>
+Package pdftex.def Info: ../results/plots//plot_chunks_time.png  used on input 
+line 216.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+File: ../results/plots//plot_chunks_time.png Graphic file (type png)
+<use ../results/plots//plot_chunks_time.png>
+Package pdftex.def Info: ../results/plots//plot_chunks_time.png  used on input 
+line 220.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+<../results/plots//plot_chunks_speedup.png, id=167, 462.528pt x 346.896pt>
+File: ../results/plots//plot_chunks_speedup.png Graphic file (type png)
+<use ../results/plots//plot_chunks_speedup.png>
+Package pdftex.def Info: ../results/plots//plot_chunks_speedup.png  used on inp
+ut line 228.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+File: ../results/plots//plot_chunks_speedup.png Graphic file (type png)
+<use ../results/plots//plot_chunks_speedup.png>
+Package pdftex.def Info: ../results/plots//plot_chunks_speedup.png  used on inp
+ut line 232.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+<../results/plots//plot_chunks_fpr.png, id=168, 462.528pt x 346.896pt>
+File: ../results/plots//plot_chunks_fpr.png Graphic file (type png)
+<use ../results/plots//plot_chunks_fpr.png>
+Package pdftex.def Info: ../results/plots//plot_chunks_fpr.png  used on input l
+ine 240.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+File: ../results/plots//plot_chunks_fpr.png Graphic file (type png)
+<use ../results/plots//plot_chunks_fpr.png>
+Package pdftex.def Info: ../results/plots//plot_chunks_fpr.png  used on input l
+ine 244.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+ [8 <../results/plots//plot_filter_fpr.png> <../results/plots//plot_chunks_time
+.png>] [9 <../results/plots//plot_chunks_speedup.png> <../results/plots//plot_c
+hunks_fpr.png>]
+relation.tex:258: Missing $ inserted.
 <inserted text> 
                 $
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
+l.258 ...\csvautotabular{../results/csv/setup.csv}
+                                                  \label{fig:setup_csv}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-relation.tex:75: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:75: Missing $ inserted.
+relation.tex:258: Missing $ inserted.
 <inserted text> 
                 $
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:75: Missing } inserted.
-<inserted text> 
-                }
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
+l.258 ...\csvautotabular{../results/csv/setup.csv}
+                                                  \label{fig:setup_csv}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-relation.tex:75: Missing $ inserted.
+relation.tex:258: Missing $ inserted.
 <inserted text> 
                 $
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
+l.258 ...\csvautotabular{../results/csv/setup.csv}
+                                                  \label{fig:setup_csv}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-relation.tex:75: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:75: Missing $ inserted.
+relation.tex:258: Missing $ inserted.
 <inserted text> 
                 $
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:75: Missing } inserted.
-<inserted text> 
-                }
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
+l.258 ...\csvautotabular{../results/csv/setup.csv}
+                                                  \label{fig:setup_csv}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-relation.tex:75: Missing $ inserted.
+relation.tex:258: Missing $ inserted.
 <inserted text> 
                 $
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
+l.258 ...\csvautotabular{../results/csv/setup.csv}
+                                                  \label{fig:setup_csv}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-relation.tex:75: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:75: Missing $ inserted.
+relation.tex:258: Missing $ inserted.
 <inserted text> 
                 $
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:75: Missing } inserted.
-<inserted text> 
-                }
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
+l.258 ...\csvautotabular{../results/csv/setup.csv}
+                                                  \label{fig:setup_csv}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-relation.tex:75: Missing $ inserted.
+relation.tex:258: Missing $ inserted.
 <inserted text> 
                 $
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
+l.258 ...\csvautotabular{../results/csv/setup.csv}
+                                                  \label{fig:setup_csv}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-relation.tex:75: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:75: Missing $ inserted.
+relation.tex:258: Missing $ inserted.
 <inserted text> 
                 $
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:75: Missing } inserted.
-<inserted text> 
-                }
-l.75     \csvautotabular{../results/csv/setup.csv}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-relation.tex:76: Missing $ inserted.
-<inserted text> 
-                $
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:76: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:76: Missing $ inserted.
-<inserted text> 
-                $
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:76: Missing } inserted.
-<inserted text> 
-                }
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-relation.tex:76: Missing $ inserted.
-<inserted text> 
-                $
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:76: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:76: Missing $ inserted.
-<inserted text> 
-                $
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:76: Missing } inserted.
-<inserted text> 
-                }
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-relation.tex:76: Missing $ inserted.
-<inserted text> 
-                $
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:76: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:76: Missing $ inserted.
-<inserted text> 
-                $
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:76: Missing } inserted.
-<inserted text> 
-                }
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-relation.tex:76: Missing $ inserted.
-<inserted text> 
-                $
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:76: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:76: Missing $ inserted.
-<inserted text> 
-                $
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:76: Missing } inserted.
-<inserted text> 
-                }
-l.76 ...\csvautotabular{../results/csv/filter.csv}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Missing } inserted.
-<inserted text> 
-                }
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Missing } inserted.
-<inserted text> 
-                }
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Missing } inserted.
-<inserted text> 
-                }
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Missing } inserted.
-<inserted text> 
-                }
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Missing } inserted.
-<inserted text> 
-                }
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Missing } inserted.
-<inserted text> 
-                }
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Missing } inserted.
-<inserted text> 
-                }
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Missing } inserted.
-<inserted text> 
-                }
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-relation.tex:77: Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-relation.tex:77: Missing } inserted.
-<inserted text> 
-                }
-l.77 ...\csvautotabular{../results/csv/chunks.csv}
-                                                  
+l.258 ...\csvautotabular{../results/csv/setup.csv}
+                                                  \label{fig:setup_csv}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1048,43 +682,92 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (533.35936pt too wide) in paragraph at lines 75--78
-[]
+Overfull \hbox (117.0725pt too wide) in paragraph at lines 258--259
+[][][] 
  []
 
+relation.tex:261: Missing $ inserted.
+<inserted text> 
+                $
+l.261 ...csvautotabular{../results/csv/filter.csv}
+                                                  \label{fig:filter_csv}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-Overfull \hbox (610.00945pt too wide) in paragraph at lines 75--78
-[]
+relation.tex:261: Missing $ inserted.
+<inserted text> 
+                $
+l.261 ...csvautotabular{../results/csv/filter.csv}
+                                                  \label{fig:filter_csv}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:261: Missing $ inserted.
+<inserted text> 
+                $
+l.261 ...csvautotabular{../results/csv/filter.csv}
+                                                  \label{fig:filter_csv}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:261: Missing $ inserted.
+<inserted text> 
+                $
+l.261 ...csvautotabular{../results/csv/filter.csv}
+                                                  \label{fig:filter_csv}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:261: Missing $ inserted.
+<inserted text> 
+                $
+l.261 ...csvautotabular{../results/csv/filter.csv}
+                                                  \label{fig:filter_csv}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:261: Missing $ inserted.
+<inserted text> 
+                $
+l.261 ...csvautotabular{../results/csv/filter.csv}
+                                                  \label{fig:filter_csv}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:261: Missing $ inserted.
+<inserted text> 
+                $
+l.261 ...csvautotabular{../results/csv/filter.csv}
+                                                  \label{fig:filter_csv}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:261: Missing $ inserted.
+<inserted text> 
+                $
+l.261 ...csvautotabular{../results/csv/filter.csv}
+                                                  \label{fig:filter_csv}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (117.0725pt too wide) in paragraph at lines 261--262
+[][][] 
  []
 
-
-Overfull \hbox (1641.9023pt too wide) in paragraph at lines 75--78
-[] 
- []
-
-[6
-
-]
-<../results/plots//plot_setup.png, id=90, 1734.48pt x 578.16pt>
-File: ../results/plots//plot_setup.png Graphic file (type png)
-<use ../results/plots//plot_setup.png>
-Package pdftex.def Info: ../results/plots//plot_setup.png  used on input line 8
-0.
-(pdftex.def)             Requested size: 360.0pt x 119.99684pt.
-<../results/plots//plot_filter.png, id=92, 1734.48pt x 578.16pt>
-File: ../results/plots//plot_filter.png Graphic file (type png)
-<use ../results/plots//plot_filter.png>
-Package pdftex.def Info: ../results/plots//plot_filter.png  used on input line 
-81.
-(pdftex.def)             Requested size: 360.0pt x 119.99684pt.
-<../results/plots//plot_chunks.png, id=93, 1734.48pt x 578.16pt>
-File: ../results/plots//plot_chunks.png Graphic file (type png)
-<use ../results/plots//plot_chunks.png>
-Package pdftex.def Info: ../results/plots//plot_chunks.png  used on input line 
-82.
-(pdftex.def)             Requested size: 360.0pt x 119.99684pt.
- [7] [8 <../results/plots//plot_setup.png> <../results/plots//plot_filter.png> 
-<../results/plots//plot_chunks.png>] [9
+[10
 
 ]
 (C:/Users\loreb\Documents\IntellijProjects\PycharmProjects\bloomfilter_parallel
@@ -1098,31 +781,35 @@ Package rerunfilecheck Warning: File `relation.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `relation.out':
-(rerunfilecheck)             Before: CAFD7B5E76F0E1F6E9C4701C1D23F0A9;988
-(rerunfilecheck)             After:  15D4D451CA6FE0B57FD582F70B096E1D;1247.
+(rerunfilecheck)             Before: 30E4D1E9FD0531F9D79C47C302B78043;1315
+(rerunfilecheck)             After:  65B856A4E22F2F3449D68E1C6FD30FC9;2241.
  ) 
 Here is how much of TeX's memory you used:
- 10753 strings out of 476331
- 185956 string characters out of 5787764
- 1902660 words of memory out of 5000000
- 31014 multiletter control sequences out of 15000+600000
- 518356 words of font info for 53 fonts, out of 8000000 for 9000
+ 14899 strings out of 476331
+ 251674 string characters out of 5787764
+ 2012660 words of memory out of 12000000
+ 35042 multiletter control sequences out of 15000+600000
+ 519331 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,77p,409b,436s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/loreb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmbx10.pfb><C:/Users/loreb/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb><C:/Users/loreb/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmmi10.pfb><C:/Users/loreb/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/loreb/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/loreb/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/loreb/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/loreb/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/l
-oreb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+ 75i,9n,77p,507b,2205s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\loreb\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1095.pk><C:/Users/loreb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb><C:/Users/loreb/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmbx12.pfb><C:/Users/loreb/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmmi10.pfb><C:/Users/loreb/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/loreb/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/loreb/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/loreb/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/lo
+reb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/U
+sers/loreb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pf
+b><C:/Users/loreb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmsy10.pfb><C:/Users/loreb/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmtt9.pfb>
 Output written on C:/Users\loreb\Documents\IntellijProjects\PycharmProjects\blo
-omfilter_parallel\out\relation.pdf (9 pages, 596701 bytes).
+omfilter_parallel\out\relation.pdf (10 pages, 493969 bytes).
 PDF statistics:
- 159 PDF objects out of 1000 (max. 8388607)
- 26 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 265 PDF objects out of 1000 (max. 8388607)
+ 90 named destinations out of 1000 (max. 500000)
+ 150 words of extra memory for PDF output out of 10000 (max. 10000000)
 

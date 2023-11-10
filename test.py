@@ -31,14 +31,14 @@ filter_results_filename = 'results/csv/filter.csv'
 chunks_results_filename = 'results/csv/chunks.csv'
 
 # Plots filenames
-plot_setup_filename = 'results/plots/plot_setup.png'
-plot_filter_filename = 'results/plots/plot_filter.png'
-plot_chunks_filename = 'results/plots/plot_chunks.png'
+plot_setup_filename = 'results/plots/plot_setup_'
+plot_filter_filename = 'results/plots/plot_filter_'
+plot_chunks_filename = 'results/plots/plot_chunks_'
 
 # key value for the results dictionary
-test_key = 'test'
-time_seq_key = 'time_seq'
-fpr_key = 'fpr'
-time_par_key = 'time_par'
-speedup_key = 'speedup'
+test_key = 'Test'
+time_seq_key = 'TSeq'
+fpr_key = 'FPR'
+time_par_key = 'TPar'
+speedup_key = 'SpeedUp'
 
