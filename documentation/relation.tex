@@ -83,12 +83,12 @@
 
     \section{Parallelizzazione}\label{sec:parallelizazzione}
     Il codice sequenziale di riferimento da parallelizzare per la fase di setup è il seguente:
-    \lstinputlisting[language=python, firstline=33, lastline=39,label={lst:sequential-code-setup}]{../src/bloom_filter.py}
-    %\lstinputlisting[language=c++, firstline=38, lastline=62,label={lst:sequential-code}]{../src/renderer.cu}
+    \lstinputlisting[language=python, firstline=33, lastline=39,label={lst:sequential-code-setup-joblib}]{../src/bloom_filter.py}
+    \lstinputlisting[language=c++, firstline=22, lastline=28,label={lst:sequential-code-setup-omp}]{references/BloomFilter.cpp}
 
     Il codice sequenziale di riferimento da parallelizzare per la fase di filter è il seguente:
-    \lstinputlisting[language=python, firstline=58, lastline=66,label={lst:sequential-code-filter}]{../src/bloom_filter.py}
-    %\lstinputlisting[language=c++, firstline=38, lastline=62,label={lst:sequential-code}]{../src/renderer.cu}
+    \lstinputlisting[language=python, firstline=58, lastline=66,label={lst:sequential-code-filter-joblib}]{../src/bloom_filter.py}
+    \lstinputlisting[language=c++, firstline=45, lastline=51,label={lst:sequential-code-filter-omp}]{references/BloomFilter.cpp}
 
     \subsection{Omp}\label{subsec:omp}
     Omp è una libreria C che permette di parallelizzare funzioni e cicli for.
@@ -97,10 +97,10 @@
     funzione filter del bloom filter.
     Abbiamo poi successivamente elaborato quanto tempo impiegano le funzioni setup e filter a seconda del numero di
     processori utilizzati rispetto al tempo impiegato nella sua versione sequenziale.
-    %\lstinputlisting[language=c++, firstline=38, lastline=62,label={lst:sequential-code}]{../src/renderer.cu}
+    \lstinputlisting[language=c++, firstline=30, lastline=37, label={lst:sequential-code}]{references/BloomFilter.cpp}
 
     \subsection{Joblib}\label{subsec:joblib}
-    è una libreria Python che permette di parallelizzare funzioni e cicli for.
+    Joblib è una libreria Python che permette di parallelizzare funzioni e cicli for.
     La funzione Parallel prende in input il numero di processori da utilizzare e la funzione da parallelizzare.
     In questo elaborato abbiamo utilizzato la funzione Parallel per parallelizzare la funzione setup e la funzione
     filter del bloom filter.
@@ -124,24 +124,192 @@
     \section{Risultati}\label{sec:risultati}
     \subsection{FPR: 0.10}\label{subsec:fpr-010}
     \subsubsection{Setup}\label{subsubsec:fpr-010-setup}
+    \begin{figure}[H]
+        \centering
+        \minipage{0.49\textwidth}
+        \includegraphics[width=\linewidth]{omp/010/setup_time_plot}
+            \caption{Speedup setup Omp}\label{fig:010-setup_time_omp}
+        \endminipage\hfill
+        \minipage{0.49\textwidth}
+        \includegraphics[width=\linewidth]{joblib/010/setup_time_plot}
+            \caption{Speedup setup Joblib}\label{fig:010setup_time_joblib}
+        \endminipage\hfill
+        \caption{Time setup}
+    \end{figure}
+    \begin{figure}[H]
+        \centering
+        \minipage{0.49\textwidth}
+        \includegraphics[width=\linewidth]{omp/010/setup_speedup_plot}
+            \caption{Speedup setup Omp}\label{fig:010-setup_speedup_omp}
+        \endminipage\hfill
+        \minipage{0.49\textwidth}
+        \includegraphics[width=\linewidth]{joblib/010/setup_speedup_plot}
+            \caption{Speedup setup Joblib}\label{fig:010-setup_speedup_joblib}
+        \endminipage\hfill
+        \caption{Speedup setup}
+    \end{figure}
+    \begin{figure}[H]
+        \centering
+        \minipage{0.49\textwidth}
+        \includegraphics[width=\linewidth]{omp/010/setup_fpr_plot}
+            \caption{Speedup setup Omp}\label{fig:010-setup_fpr_omp}
+        \endminipage\hfill
+        \minipage{0.49\textwidth}
+        \includegraphics[width=\linewidth]{joblib/010/setup_fpr_plot}
+            \caption{Speedup setup Joblib}\label{fig:010-setup_fpr_joblib}
+        \endminipage\hfill
+        \caption{Time setup}
+    \end{figure}
     \subsubsection{Filter}\label{subsubsec:fpr-010-filter}
-    \subsubsection{Chunks}\label{subsubsec:fpr-010-chunks}
+    \begin{figure}[H]
+        \centering
+        \minipage{0.49\textwidth}
+        \includegraphics[width=\linewidth]{omp/010/filter_time_plot}
+            \caption{Speedup setup Omp}\label{fig:010-filter_time_omp}
+        \endminipage\hfill
+        \minipage{0.49\textwidth}
+        \includegraphics[width=\linewidth]{joblib/010/filter_time_plot}
+            \caption{Speedup setup Joblib}\label{fig:010-filter_time_joblib}
+        \endminipage\hfill
+        \caption{Time setup}
+    \end{figure}
+    \begin{figure}[H]
+        \centering
+        \minipage{0.49\textwidth}
+        \includegraphics[width=\linewidth]{omp/010/filter_speedup_plot}
+            \caption{Speedup setup Omp}\label{fig:010-filter_speedup_omp}
+        \endminipage\hfill
+        \minipage{0.49\textwidth}
+        \includegraphics[width=\linewidth]{joblib/010/filter_speedup_plot}
+            \caption{Speedup setup Joblib}\label{fig:010-filter_speedup_joblib}
+        \endminipage\hfill
+        \caption{Speedup setup}
+    \end{figure}
+    \begin{figure}[H]
+        \centering
+        \minipage{0.49\textwidth}
+        \includegraphics[width=\linewidth]{omp/010/filter_fpr_plot}
+            \caption{Speedup setup Omp}\label{fig:010-filter_fpr_omp}
+        \endminipage\hfill
+        \minipage{0.49\textwidth}
+        \includegraphics[width=\linewidth]{joblib/010/filter_fpr_plot}
+            \caption{Speedup setup Joblib}\label{fig:010-filter_fpr_joblib}
+        \endminipage\hfill
+        \caption{Time setup}
+    \end{figure}
+    \subsubsection{Chunks}\label{subsubsec:010-chunks}
+    \begin{figure}[H]
+        \centering
+        \minipage{0.49\textwidth}
+        \includegraphics[width=\linewidth]{joblib/010/chunks_time_plot}
+            \caption{Times setup Chunk}\label{fig:010-chunks_time}
+        \endminipage\hfill
+        \minipage{0.49\textwidth}
+        \includegraphics[width=\linewidth]{joblib/010/chunks_speedup_plot}
+            \caption{Speedup setup Chunk}\label{fig:010-chunks_speedup}
+        \endminipage\hfill
+        \caption{Time setup}
+    \end{figure}
 
     \subsection{FPR: 0.05}\label{subsec:fpr-005}
     \subsubsection{Setup}\label{subsubsec:fpr-005-setup}
+    \begin{figure}[H]
+        \centering
+        \minipage{0.49\textwidth}
+        \includegraphics[width=\linewidth]{omp/005/setup_time_plot}
+            \caption{Speedup setup Omp}\label{fig:005-setup_time_omp}
+        \endminipage\hfill
+        \minipage{0.49\textwidth}
+        \includegraphics[width=\linewidth]{joblib/005/setup_time_plot}
+            \caption{Speedup setup Joblib}\label{fig:005-setup_time_joblib}
+        \endminipage\hfill
+        \caption{Time setup}
+    \end{figure}
+    \begin{figure}[H]
+        \centering
+        \minipage{0.49\textwidth}
+        \includegraphics[width=\linewidth]{omp/005/setup_speedup_plot}
+            \caption{Speedup setup Omp}\label{fig:005-setup_speedup_omp}
+        \endminipage\hfill
+        \minipage{0.49\textwidth}
+        \includegraphics[width=\linewidth]{joblib/005/setup_speedup_plot}
+            \caption{Speedup setup Joblib}\label{fig:005-setup_speedup_joblib}
+        \endminipage\hfill
+        \caption{Speedup setup}
+    \end{figure}
+    \begin{figure}[H]
+        \centering
+        \minipage{0.49\textwidth}
+        \includegraphics[width=\linewidth]{omp/005/setup_fpr_plot}
+            \caption{Speedup setup Omp}\label{fig:005-setup_fpr_omp}
+        \endminipage\hfill
+        \minipage{0.49\textwidth}
+        \includegraphics[width=\linewidth]{joblib/005/setup_fpr_plot}
+            \caption{Speedup setup Joblib}\label{fig:005-setup_fpr_joblib}
+        \endminipage\hfill
+        \caption{Time setup}
+    \end{figure}
     \subsubsection{Filter}\label{subsubsec:fpr-005-filter}
-    \subsubsection{Chunks}\label{subsubsec:fpr-005-chunks}
+    \begin{figure}[H]
+        \centering
+        \minipage{0.49\textwidth}
+        \includegraphics[width=\linewidth]{omp/005/filter_time_plot}
+            \caption{Speedup setup Omp}\label{fig:005-filter_time_omp}
+        \endminipage\hfill
+        \minipage{0.49\textwidth}
+        \includegraphics[width=\linewidth]{joblib/005/filter_time_plot}
+            \caption{Speedup setup Joblib}\label{fig:005-filter_time_joblib}
+        \endminipage\hfill
+        \caption{Time setup}
+    \end{figure}
+    \begin{figure}[H]
+        \centering
+        \minipage{0.49\textwidth}
+        \includegraphics[width=\linewidth]{omp/005/filter_speedup_plot}
+            \caption{Speedup setup Omp}\label{fig:005-filter_speedup_omp}
+        \endminipage\hfill
+        \minipage{0.49\textwidth}
+        \includegraphics[width=\linewidth]{joblib/005/filter_speedup_plot}
+            \caption{Speedup setup Joblib}\label{fig:005-filter_speedup_joblib}
+        \endminipage\hfill
+        \caption{Speedup setup}
+    \end{figure}
+    \begin{figure}[H]
+        \centering
+        \minipage{0.49\textwidth}
+        \includegraphics[width=\linewidth]{omp/005/filter_fpr_plot}
+            \caption{Speedup setup Omp}\label{fig:005-filter_fpr_omp}
+        \endminipage\hfill
+        \minipage{0.49\textwidth}
+        \includegraphics[width=\linewidth]{joblib/005/filter_fpr_plot}
+            \caption{Speedup setup Joblib}\label{fig:005-filter_fpr_joblib}
+        \endminipage\hfill
+        \caption{Time setup}
+    \end{figure}
+    \subsubsection{Chunks}\label{subsubsec:005-chunks}
+    \begin{figure}[H]
+        \centering
+        \minipage{0.49\textwidth}
+        \includegraphics[width=\linewidth]{joblib/005/chunks_time_plot}
+            \caption{TImes setup Chunks}\label{fig:005-chunks_time}
+        \endminipage\hfill
+        \minipage{0.49\textwidth}
+        \includegraphics[width=\linewidth]{joblib/005/chunks_speedup_plot}
+            \caption{Speedup setup Chunks}\label{fig:005-chunks_speedup}
+        \endminipage\hfill
+        \caption{Time setup}
+    \end{figure}
 
     \subsection{FPR: 0.01}\label{subsec:fpr-001}
     \subsubsection{Setup}\label{subsubsec:setup}
     \begin{figure}[H]
         \centering
         \minipage{0.49\textwidth}
-        \includegraphics[width=\linewidth]{plot_setup_time}
+        \includegraphics[width=\linewidth]{omp/001/setup_time_plot}
             \caption{Speedup setup Omp}\label{fig:setup_time_omp}
         \endminipage\hfill
-        \minipage{0.45\textwidth}
-        \includegraphics[width=\linewidth]{plot_setup_time}
+        \minipage{0.49\textwidth}
+        \includegraphics[width=\linewidth]{joblib/001/setup_time_plot}
             \caption{Speedup setup Joblib}\label{fig:setup_time_joblib}
         \endminipage\hfill
         \caption{Time setup}
@@ -149,11 +317,11 @@
     \begin{figure}[H]
         \centering
         \minipage{0.49\textwidth}
-        \includegraphics[width=\linewidth]{plot_setup_speedup}
+        \includegraphics[width=\linewidth]{omp/001/setup_speedup_plot}
             \caption{Speedup setup Omp}\label{fig:setup_speedup_omp}
         \endminipage\hfill
         \minipage{0.49\textwidth}
-        \includegraphics[width=\linewidth]{plot_setup_speedup}
+        \includegraphics[width=\linewidth]{joblib/001/setup_speedup_plot}
             \caption{Speedup setup Joblib}\label{fig:setup_speedup_joblib}
         \endminipage\hfill
         \caption{Speedup setup}
@@ -161,11 +329,11 @@
     \begin{figure}[H]
         \centering
         \minipage{0.49\textwidth}
-        \includegraphics[width=\linewidth]{plot_setup_fpr}
+        \includegraphics[width=\linewidth]{omp/001/setup_fpr_plot}
             \caption{Speedup setup Omp}\label{fig:setup_fpr_omp}
         \endminipage\hfill
         \minipage{0.49\textwidth}
-        \includegraphics[width=\linewidth]{plot_setup_fpr}
+        \includegraphics[width=\linewidth]{joblib/001/setup_fpr_plot}
             \caption{Speedup setup Joblib}\label{fig:setup_fpr_joblib}
         \endminipage\hfill
         \caption{Time setup}
@@ -175,23 +343,23 @@
     \begin{figure}[H]
         \centering
         \minipage{0.49\textwidth}
-        \includegraphics[width=\linewidth]{plot_filter_time}
-            \caption{Speedup filter Omp}\label{fig:filter_time_omp}
+        \includegraphics[width=\linewidth]{omp/001/filter_time_plot}
+            \caption{Times filter Omp}\label{fig:filter_time_omp}
         \endminipage\hfill
         \minipage{0.49\textwidth}
-        \includegraphics[width=\linewidth]{plot_filter_time}
-            \caption{Speedup filter Joblib}\label{fig:filter_time_joblib}
+        \includegraphics[width=\linewidth]{joblib/001/filter_time_plot}
+            \caption{Times filter Joblib}\label{fig:filter_time_joblib}
         \endminipage\hfill
         \caption{Time filter}
     \end{figure}
     \begin{figure}[H]
         \centering
         \minipage{0.49\textwidth}
-        \includegraphics[width=\linewidth]{plot_filter_speedup}
+        \includegraphics[width=\linewidth]{omp/001/filter_speedup_plot}
             \caption{Speedup filter Omp}\label{fig:filter_speedup_omp}
         \endminipage\hfill
         \minipage{0.49\textwidth}
-        \includegraphics[width=\linewidth]{plot_filter_speedup}
+        \includegraphics[width=\linewidth]{joblib/001/filter_speedup_plot}
             \caption{Speedup filter Joblib}\label{fig:filter_speedup_joblib}
         \endminipage\hfill
         \caption{Speedup filter}
@@ -199,12 +367,12 @@
     \begin{figure}[H]
         \centering
         \minipage{0.49\textwidth}
-        \includegraphics[width=\linewidth]{plot_filter_fpr}
-            \caption{Speedup filter Omp}\label{fig:filter_fpr_omp}
+        \includegraphics[width=\linewidth]{omp/001/filter_fpr_plot}
+            \caption{FPR filter Omp}\label{fig:filter_fpr_omp}
         \endminipage\hfill
         \minipage{0.49\textwidth}
-        \includegraphics[width=\linewidth]{plot_filter_fpr}
-            \caption{Speedup filter Joblib}\label{fig:filter_fpr_joblib}
+        \includegraphics[width=\linewidth]{joblib/001/filter_fpr_plot}
+            \caption{FPR filter Joblib}\label{fig:filter_fpr_joblib}
         \endminipage\hfill
         \caption{Time filter}
     \end{figure}
@@ -213,38 +381,14 @@
     \begin{figure}[H]
         \centering
         \minipage{0.49\textwidth}
-        \includegraphics[width=\linewidth]{plot_chunks_time}
-            \caption{Speedup chunks Omp}\label{fig:chunks_time_omp}
+        \includegraphics[width=\linewidth]{joblib/001/chunks_time_plot}
+            \caption{Times chunks Joblib}\label{fig:chunks_time_joblib}
         \endminipage\hfill
         \minipage{0.49\textwidth}
-        \includegraphics[width=\linewidth]{plot_chunks_time}
-            \caption{Speedup chunks Joblib}\label{fig:chunks_time_joblib}
-        \endminipage\hfill
-        \caption{Time chunks}
-    \end{figure}
-    \begin{figure}[H]
-        \centering
-        \minipage{0.49\textwidth}
-        \includegraphics[width=\linewidth]{plot_chunks_speedup}
-            \caption{Speedup chunks Omp}\label{fig:chunks_speedup_omp}
-        \endminipage\hfill
-        \minipage{0.49\textwidth}
-        \includegraphics[width=\linewidth]{plot_chunks_speedup}
+        \includegraphics[width=\linewidth]{joblib/001/chunks_speedup_plot}
             \caption{Speedup chunks Joblib}\label{fig:chunks_speedup_joblib}
         \endminipage\hfill
         \caption{Speedup chunks}
-    \end{figure}
-    \begin{figure}[H]
-        \centering
-        \minipage{0.49\textwidth}
-        \includegraphics[width=\linewidth]{plot_chunks_fpr}
-            \caption{Speedup chunks Omp}\label{fig:chunks_fpr_omp}
-        \endminipage\hfill
-        \minipage{0.49\textwidth}
-        \includegraphics[width=\linewidth]{plot_chunks_fpr}
-            \caption{Speedup chunks Joblib}\label{fig:chunks_fpr_joblib}
-        \endminipage\hfill
-        \caption{Time chunks}
     \end{figure}
 
     \section{Conclusioni}\label{sec:conclusioni}
@@ -261,7 +405,7 @@
         \csvautotabular{../results/csv/filter.csv}\label{fig:filter_csv}
     \end{figure}
     \begin{figure}[H]
-        % \csvautotabular{../results/csv/chunks.csv}\label{fig:chunks_csv}
+        \csvautotabular{../results/csv/chunks.csv}\label{fig:chunks_csv}
     \end{figure}
 
 

@@ -59,11 +59,11 @@ def check_duplicates(emails, spam_emails):
 
 
 def main():
-    print(f"SEQUENTIAL: Generating {n_emails} emails ", end='')
-    start = time.time()
-    emails = [generate_email() for _ in range(n_emails)]
-    t_seq = time.time() - start
-    print(f"in {t_seq} seconds")
+    # print(f"SEQUENTIAL: Generating {n_emails} emails ", end='')
+    # start = time.time()
+    # emails = [generate_email() for _ in range(n_emails)]
+    # t_seq = time.time() - start
+    # print(f"in {t_seq} seconds")
 
     print(f"PARALLEL: Generating {n_emails} emails ", end='')
     start = time.time()
@@ -71,7 +71,7 @@ def main():
     t_par = time.time() - start
     print(f"in {t_par} seconds")
 
-    print(f"Speedup: {t_seq / t_par}")
+    # print(f"Speedup: {t_seq / t_par}")
 
     print(f"PARALLEL: Generating {n_spam} spam emails ", end='')
     start = time.time()
