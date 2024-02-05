@@ -39,9 +39,12 @@
     tabsize=2
 }
 \lstset{style=mystyle}
-\graphicspath{{../results/plots/}}
+\graphicspath{{../results/csv/}}
 
-\title{BloomFilter Speedup on setup and filter: Parallel Programming for Machine Learning}
+\title{BloomFilter Speedup on setup and filter with Joblib}
+\title{%
+  Parallelizzazione di un BloomFilter per la classificazione di email di spam \\
+  \large Parallel Programming for Machine Learning}
 \author{Lorenzo Baiardi, Thomas Del Moro}
 \date{GG MM AAAA}
 
@@ -52,18 +55,19 @@
     \clearpage
 
     \section{Introduzione}\label{sec:introduzione}
-    Il progetto consiste nella parallelizzazione di un BloomFilter per la classificazione di email di spam, utilizzando
-    la libreria Omp e Joblib.
-    Le operazioni da parallelizzare sono la fase di setup e la fase di filter.
-    Vogliamo verificare come varia lo speedup al variare della dimensione dell'insieme su cui effettuare il training,
-    come varia lo speedup al variare della numero di processori utilizzati e al variare della implementazione utilizzata.
+    Il nostro progetto si concentra sulla parallelizzazione di un BloomFilter impiegato per la classificazione di email considerate spam.
+    Per raggiungere questo obiettivo, utilizziamo le librerie Omp e Joblib per implementare il parallelismo.
+
+    Le fasi che intendiamo parallelizzare sono il setup iniziale e la fase di filtraggio.
+    Vogliamo analizzare come lo speedup varia in relazione alle dimensioni dell'insieme di dati utilizzato per il training.
+    Allo stesso modo, intendiamo valutare l'effetto dello speedup in funzione del numero di processori impiegati, delle dimensioni del dataset
+    e delle diverse implementazioni utilizzate.
 
     \section{Analisi del problema}\label{sec:analisi-del-problema}
-    Il BloomFilter è una struttura dati probabilistica che permette di verificare se un elemento appartiene a un insieme,
-    in questo caso se un email è di spam o meno.
-    La fase di setup del bloom filter consiste nel calcolo delle funzioni hash e nella creazione del vettore di bit che
-    si basa sulla dimensione dell'insieme su cui si vuole effettuare il training e sulla probabilità di falsi positivi
-    che ci aspettiamo di ottenere.
+    Il BloomFilter rappresenta una struttura dati probabilistica finalizzata a determinare la presenza di un elemento all'interno di un insieme,
+    nel contesto specifico, se una determinata email è considerata spam o meno.
+    La fase iniziale di configurazione del BloomFilter coinvolge il calcolo delle funzioni hash e la creazione del vettore di bit.
+    Quest'ultima operazione si basa sulla dimensione dell'insieme utilizzato per il training e sulla probabilità attesa di ottenere falsi positivi.
     La formula per il calcolo della dimensione del vettore di bit è la seguente:
     \begin{equation}
         size = -\frac{n \ln{p}}{(\ln{2})^2}\label{eq:dim_bit}
@@ -76,28 +80,29 @@
     \end{equation}
     Dove $h$ è il numero di funzioni hash da utilizzare per il training.
 
-    Una volta passato il dataset di training al bloom filter, questo calcola per ogni email le $h$ funzioni hash e setta
-    a 1 i bit corrispondenti alle posizioni calcolate.
-    Per verificare se un email è di spam o meno, il bloom filter calcola le $h$ funzioni hash e verifica se i bit
-    corrispondenti alle posizioni calcolate sono settati a 1.
+    Dopo aver fornito al BloomFilter il dataset di training, quest'ultimo procede al calcolo delle $h$ funzioni hash per ciascuna email,
+    impostando a 1 i bit nelle posizioni calcolate.
+    Per determinare se un'email è classificata come spam o meno, il BloomFilter esegue nuovamente il calcolo delle $h$
+    funzioni hash e verifica se i bit corrispondenti alle posizioni calcolate sono settati a 1.
 
     \section{Parallelizzazione}\label{sec:parallelizazzione}
     Il codice sequenziale di riferimento da parallelizzare per la fase di setup è il seguente:
     \lstinputlisting[language=python, firstline=33, lastline=39,label={lst:sequential-code-setup-joblib}]{../src/bloom_filter.py}
-    \lstinputlisting[language=c++, firstline=22, lastline=28,label={lst:sequential-code-setup-omp}]{references/BloomFilter.cpp}
+    \lstinputlisting[language=c++, firstline=22, lastline=28,label={lst:sequential-code-setup-omp}]{BloomFilter.cpp}
 
     Il codice sequenziale di riferimento da parallelizzare per la fase di filter è il seguente:
     \lstinputlisting[language=python, firstline=58, lastline=66,label={lst:sequential-code-filter-joblib}]{../src/bloom_filter.py}
-    \lstinputlisting[language=c++, firstline=45, lastline=51,label={lst:sequential-code-filter-omp}]{references/BloomFilter.cpp}
+    \lstinputlisting[language=c++, firstline=45, lastline=51,label={lst:sequential-code-filter-omp}]{BloomFilter.cpp}
 
-    \subsection{Omp}\label{subsec:omp}
-    Omp è una libreria C che permette di parallelizzare funzioni e cicli for.
-    La funzione omp parallel prende in input il numero di processori da utilizzare e la funzione da parallelizzare.
-    In questo elaborato abbiamo utilizzato la funzione omp parallel for per parallelizzare la funzione setup e la
-    funzione filter del bloom filter.
-    Abbiamo poi successivamente elaborato quanto tempo impiegano le funzioni setup e filter a seconda del numero di
-    processori utilizzati rispetto al tempo impiegato nella sua versione sequenziale.
-    \lstinputlisting[language=c++, firstline=30, lastline=37, label={lst:sequential-code}]{references/BloomFilter.cpp}
+    \subsection{OpenMP (Omp)}\label{subsec:omp}
+    OpenMP (Omp) è una libreria in linguaggio C progettata per consentire la parallelizzazione di funzioni e cicli for.
+    La funzione \texttt{omp parallel} richiede come input il numero di processori da impiegare e la funzione da parallelizzare.
+    Nel contesto di questo lavoro, abbiamo adottato la funzione \texttt{omp parallel for} per parallelizzare le operazioni
+    di setup e filtraggio del BloomFilter.
+
+    Successivamente, abbiamo analizzato il tempo impiegato dalle funzioni di setup e filtraggio in relazione al numero
+    di processori utilizzati, confrontandolo con il tempo richiesto nella versione sequenziale.
+    \lstinputlisting[language=c++, firstline=30, lastline=37, label={lst:sequential-code}]{BloomFilter.cpp}
 
     \subsection{Joblib}\label{subsec:joblib}
     Joblib è una libreria Python che permette di parallelizzare funzioni e cicli for.
@@ -127,11 +132,11 @@
     \begin{figure}[H]
         \centering
         \minipage{0.49\textwidth}
-        \includegraphics[width=\linewidth]{omp/010/setup_time_plot}
+        \includegraphics[width=\linewidth]{openmp/010/setup_times}
             \caption{Speedup setup Omp}\label{fig:010-setup_time_omp}
         \endminipage\hfill
         \minipage{0.49\textwidth}
-        \includegraphics[width=\linewidth]{/C:/Users/loreb/Documents/IntellijProjects/PycharmProjects/bloomfilter_parallel/results/csv/joblib/010/setup_time_plot}
+        \includegraphics[width=\linewidth]{/joblib/010/setup_time_plot}
             \caption{Speedup setup Joblib}\label{fig:010setup_time_joblib}
         \endminipage\hfill
         \caption{Time setup}
@@ -139,7 +144,7 @@
     \begin{figure}[H]
         \centering
         \minipage{0.49\textwidth}
-        \includegraphics[width=\linewidth]{omp/010/setup_speedup_plot}
+        \includegraphics[width=\linewidth]{openmp/010/setup_speedup}
             \caption{Speedup setup Omp}\label{fig:010-setup_speedup_omp}
         \endminipage\hfill
         \minipage{0.49\textwidth}
