@@ -123,15 +123,19 @@
         \item \textbf{Sistema Operativo}: Windows 11
     \end{itemize}
 
-    \section{Tests}\label{sec:tests}
-    I test sono stati effettuati su un dataset da 1000 fino a 10000000 email, con una probabilità di falsi positivi di
-    0.10, 0.05 e 0.01.
+    \clearpage
 
-    \section{Risultati}\label{sec:risultati}
+    \section{Test}\label{sec:test}
     \input{risultati}
 
+    \clearpage
     \section{Conclusioni}\label{sec:conclusioni}
-    Dai risultati ottenuti possiamo vedere come il valore di Speedup massimo si attesti intorno a 3 rispetto alla versione sequenziale.
-    In generale possiamo notare come lo speedup aumenti con l'aumentare della dimensione dell'insieme, fino a un certo punto per la versione Joblib.
+    I risultati ottenuti mostrano che la parallelizzazione delle operazioni di setup e filtraggio del BloomFilter
+    consente di ottenere uno speedup significativo in relazione al numero di processori impiegati.
+    Specificamente, in termini di tempo, la versione parallelizzata con Joblib è risultata più efficiente rispetto
+    alla versione parallelizzata con Omp.
+    Viceversa, la versione parallelizzata con Omp ha mostrato un miglioramento più significativo in termini di speedup.
+    L'operazione di chunking ha permesso di ottenere uno speedup leggermente migliore rispetto alla versione senza chunking
+    per alcuni valori di chunk size.
 
 \end{document}
