@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.10.31)  7 FEB 2024 13:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.10.31)  10 NOV 2023 14:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -427,24 +427,24 @@ Package: mdwtab 1998/04/28 1.9 Table typesetting with style
 \auxil\relation.aux)
 \openout1 = `relation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
 
 (C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -471,7 +471,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 52.
+Package hyperref Info: Link coloring OFF on input line 49.
 
 (C:/Users\loreb\Documents\IntellijProjects\PycharmProjects\bloomfilter_parallel
 \auxil\relation.out)
@@ -489,327 +489,287 @@ Package caption Info: End \AtBeginDocument code.
 (C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
-[2
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 86.
+
+(../src/bloom_filter.py [2
+
+]) (../src/bloom_filter.py) (../src/bloom_filter.py
+[3]) (../src/bloom_filter.py)
+<../results/plots//plot_setup_time.png, id=102, 462.528pt x 346.896pt>
+File: ../results/plots//plot_setup_time.png Graphic file (type png)
+<use ../results/plots//plot_setup_time.png>
+Package pdftex.def Info: ../results/plots//plot_setup_time.png  used on input l
+ine 140.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+File: ../results/plots//plot_setup_time.png Graphic file (type png)
+<use ../results/plots//plot_setup_time.png>
+Package pdftex.def Info: ../results/plots//plot_setup_time.png  used on input l
+ine 144.
+(pdftex.def)             Requested size: 161.9989pt x 121.5001pt.
+<../results/plots//plot_setup_speedup.png, id=104, 462.528pt x 346.896pt>
+File: ../results/plots//plot_setup_speedup.png Graphic file (type png)
+<use ../results/plots//plot_setup_speedup.png>
+Package pdftex.def Info: ../results/plots//plot_setup_speedup.png  used on inpu
+t line 152.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+File: ../results/plots//plot_setup_speedup.png Graphic file (type png)
+<use ../results/plots//plot_setup_speedup.png>
+Package pdftex.def Info: ../results/plots//plot_setup_speedup.png  used on inpu
+t line 156.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+ [4]
+<../results/plots//plot_setup_fpr.png, id=131, 462.528pt x 346.896pt>
+File: ../results/plots//plot_setup_fpr.png Graphic file (type png)
+<use ../results/plots//plot_setup_fpr.png>
+Package pdftex.def Info: ../results/plots//plot_setup_fpr.png  used on input li
+ne 164.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+File: ../results/plots//plot_setup_fpr.png Graphic file (type png)
+<use ../results/plots//plot_setup_fpr.png>
+Package pdftex.def Info: ../results/plots//plot_setup_fpr.png  used on input li
+ne 168.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+ [5 <../results/plots//plot_setup_time.png>]
+<../results/plots//plot_filter_time.png, id=145, 462.528pt x 346.896pt>
+File: ../results/plots//plot_filter_time.png Graphic file (type png)
+<use ../results/plots//plot_filter_time.png>
+Package pdftex.def Info: ../results/plots//plot_filter_time.png  used on input 
+line 178.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+File: ../results/plots//plot_filter_time.png Graphic file (type png)
+<use ../results/plots//plot_filter_time.png>
+Package pdftex.def Info: ../results/plots//plot_filter_time.png  used on input 
+line 182.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+<../results/plots//plot_filter_speedup.png, id=146, 462.528pt x 346.896pt>
+File: ../results/plots//plot_filter_speedup.png Graphic file (type png)
+<use ../results/plots//plot_filter_speedup.png>
+Package pdftex.def Info: ../results/plots//plot_filter_speedup.png  used on inp
+ut line 190.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+File: ../results/plots//plot_filter_speedup.png Graphic file (type png)
+<use ../results/plots//plot_filter_speedup.png>
+Package pdftex.def Info: ../results/plots//plot_filter_speedup.png  used on inp
+ut line 194.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+
+[6 <../results/plots//plot_setup_speedup.png> <../results/plots//plot_setup_fpr
+.png>]
+<../results/plots//plot_filter_fpr.png, id=155, 462.528pt x 346.896pt>
+File: ../results/plots//plot_filter_fpr.png Graphic file (type png)
+<use ../results/plots//plot_filter_fpr.png>
+Package pdftex.def Info: ../results/plots//plot_filter_fpr.png  used on input l
+ine 202.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+File: ../results/plots//plot_filter_fpr.png Graphic file (type png)
+<use ../results/plots//plot_filter_fpr.png>
+Package pdftex.def Info: ../results/plots//plot_filter_fpr.png  used on input l
+ine 206.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+ [7 <../results/plots//plot_filter_time.png> <../results/plots//plot_filter_spe
+edup.png>]
+<../results/plots//plot_chunks_time.png, id=166, 462.528pt x 346.896pt>
+File: ../results/plots//plot_chunks_time.png Graphic file (type png)
+<use ../results/plots//plot_chunks_time.png>
+Package pdftex.def Info: ../results/plots//plot_chunks_time.png  used on input 
+line 216.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+File: ../results/plots//plot_chunks_time.png Graphic file (type png)
+<use ../results/plots//plot_chunks_time.png>
+Package pdftex.def Info: ../results/plots//plot_chunks_time.png  used on input 
+line 220.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+<../results/plots//plot_chunks_speedup.png, id=167, 462.528pt x 346.896pt>
+File: ../results/plots//plot_chunks_speedup.png Graphic file (type png)
+<use ../results/plots//plot_chunks_speedup.png>
+Package pdftex.def Info: ../results/plots//plot_chunks_speedup.png  used on inp
+ut line 228.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+File: ../results/plots//plot_chunks_speedup.png Graphic file (type png)
+<use ../results/plots//plot_chunks_speedup.png>
+Package pdftex.def Info: ../results/plots//plot_chunks_speedup.png  used on inp
+ut line 232.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+<../results/plots//plot_chunks_fpr.png, id=168, 462.528pt x 346.896pt>
+File: ../results/plots//plot_chunks_fpr.png Graphic file (type png)
+<use ../results/plots//plot_chunks_fpr.png>
+Package pdftex.def Info: ../results/plots//plot_chunks_fpr.png  used on input l
+ine 240.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+File: ../results/plots//plot_chunks_fpr.png Graphic file (type png)
+<use ../results/plots//plot_chunks_fpr.png>
+Package pdftex.def Info: ../results/plots//plot_chunks_fpr.png  used on input l
+ine 244.
+(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
+ [8 <../results/plots//plot_filter_fpr.png> <../results/plots//plot_chunks_time
+.png>] [9 <../results/plots//plot_chunks_speedup.png> <../results/plots//plot_c
+hunks_fpr.png>]
+relation.tex:258: Missing $ inserted.
+<inserted text> 
+                $
+l.258 ...\csvautotabular{../results/csv/setup.csv}
+                                                  \label{fig:setup_csv}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:258: Missing $ inserted.
+<inserted text> 
+                $
+l.258 ...\csvautotabular{../results/csv/setup.csv}
+                                                  \label{fig:setup_csv}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:258: Missing $ inserted.
+<inserted text> 
+                $
+l.258 ...\csvautotabular{../results/csv/setup.csv}
+                                                  \label{fig:setup_csv}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:258: Missing $ inserted.
+<inserted text> 
+                $
+l.258 ...\csvautotabular{../results/csv/setup.csv}
+                                                  \label{fig:setup_csv}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:258: Missing $ inserted.
+<inserted text> 
+                $
+l.258 ...\csvautotabular{../results/csv/setup.csv}
+                                                  \label{fig:setup_csv}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:258: Missing $ inserted.
+<inserted text> 
+                $
+l.258 ...\csvautotabular{../results/csv/setup.csv}
+                                                  \label{fig:setup_csv}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:258: Missing $ inserted.
+<inserted text> 
+                $
+l.258 ...\csvautotabular{../results/csv/setup.csv}
+                                                  \label{fig:setup_csv}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:258: Missing $ inserted.
+<inserted text> 
+                $
+l.258 ...\csvautotabular{../results/csv/setup.csv}
+                                                  \label{fig:setup_csv}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (117.0725pt too wide) in paragraph at lines 258--259
+[][][] 
+ []
+
+relation.tex:261: Missing $ inserted.
+<inserted text> 
+                $
+l.261 ...csvautotabular{../results/csv/filter.csv}
+                                                  \label{fig:filter_csv}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:261: Missing $ inserted.
+<inserted text> 
+                $
+l.261 ...csvautotabular{../results/csv/filter.csv}
+                                                  \label{fig:filter_csv}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:261: Missing $ inserted.
+<inserted text> 
+                $
+l.261 ...csvautotabular{../results/csv/filter.csv}
+                                                  \label{fig:filter_csv}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:261: Missing $ inserted.
+<inserted text> 
+                $
+l.261 ...csvautotabular{../results/csv/filter.csv}
+                                                  \label{fig:filter_csv}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:261: Missing $ inserted.
+<inserted text> 
+                $
+l.261 ...csvautotabular{../results/csv/filter.csv}
+                                                  \label{fig:filter_csv}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:261: Missing $ inserted.
+<inserted text> 
+                $
+l.261 ...csvautotabular{../results/csv/filter.csv}
+                                                  \label{fig:filter_csv}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+relation.tex:261: Missing $ inserted.
+<inserted text> 
+                $
+l.261 ...csvautotabular{../results/csv/filter.csv}
+                                                  \label{fig:filter_csv}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+relation.tex:261: Missing $ inserted.
+<inserted text> 
+                $
+l.261 ...csvautotabular{../results/csv/filter.csv}
+                                                  \label{fig:filter_csv}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (117.0725pt too wide) in paragraph at lines 261--262
+[][][] 
+ []
+
+[10
 
 ]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 90.
- (../src/bloom_filter.py)
-(C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2023/02/27 1.9 listings language file
-)
-(C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2023/02/27 1.9 listings language file
-)
-(C:\Users\loreb\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
-File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-)
-(BloomFilter.cpp) (../src/bloom_filter.py) (BloomFilter.cpp) [3]
-(BloomFilter.cpp) (../src/bloom_filter.py [4]) (../src/bloom_filter.py)
-(risultati.tex
-<../results/csv/openmp/010/setup_times.png, id=111, 462.528pt x 346.896pt>
-File: ../results/csv/openmp/010/setup_times.png Graphic file (type png)
-<use ../results/csv/openmp/010/setup_times.png>
-Package pdftex.def Info: ../results/csv/openmp/010/setup_times.png  used on inp
-ut line 6.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-<../results/csv/joblib/010/setup_time_plot.png, id=113, 462.528pt x 346.896pt>
-File: ../results/csv/joblib/010/setup_time_plot.png Graphic file (type png)
-<use ../results/csv/joblib/010/setup_time_plot.png>
-Package pdftex.def Info: ../results/csv/joblib/010/setup_time_plot.png  used on
- input line 10.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-<../results/csv/openmp/010/setup_speedup.png, id=114, 462.528pt x 346.896pt>
-File: ../results/csv/openmp/010/setup_speedup.png Graphic file (type png)
-<use ../results/csv/openmp/010/setup_speedup.png>
-Package pdftex.def Info: ../results/csv/openmp/010/setup_speedup.png  used on i
-nput line 18.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-<../results/csv/joblib/010/setup_speedup_plot.png, id=115, 462.528pt x 346.896p
-t>
-File: ../results/csv/joblib/010/setup_speedup_plot.png Graphic file (type png)
-<use ../results/csv/joblib/010/setup_speedup_plot.png>
-Package pdftex.def Info: ../results/csv/joblib/010/setup_speedup_plot.png  used
- on input line 22.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
- [5]
-<../results/csv/openmp/010/setup_fpr.png, id=143, 462.528pt x 346.896pt>
-File: ../results/csv/openmp/010/setup_fpr.png Graphic file (type png)
-<use ../results/csv/openmp/010/setup_fpr.png>
-Package pdftex.def Info: ../results/csv/openmp/010/setup_fpr.png  used on input
- line 30.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-<../results/csv/joblib/010/setup_fpr_plot.png, id=144, 462.528pt x 346.896pt>
-File: ../results/csv/joblib/010/setup_fpr_plot.png Graphic file (type png)
-<use ../results/csv/joblib/010/setup_fpr_plot.png>
-Package pdftex.def Info: ../results/csv/joblib/010/setup_fpr_plot.png  used on 
-input line 34.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
- [6 <../results/csv/openmp/010/setup_times.png> <../results/csv/joblib/010/setu
-p_time_plot.png> <../results/csv/openmp/010/setup_speedup.png> <../results/csv/
-joblib/010/setup_speedup_plot.png>]
-<../results/csv/openmp/010/filter1_times.png, id=158, 462.528pt x 346.896pt>
-File: ../results/csv/openmp/010/filter1_times.png Graphic file (type png)
-<use ../results/csv/openmp/010/filter1_times.png>
-Package pdftex.def Info: ../results/csv/openmp/010/filter1_times.png  used on i
-nput line 44.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-<../results/csv/joblib/010/filter_time_plot.png, id=159, 462.528pt x 346.896pt>
-
-File: ../results/csv/joblib/010/filter_time_plot.png Graphic file (type png)
-<use ../results/csv/joblib/010/filter_time_plot.png>
-Package pdftex.def Info: ../results/csv/joblib/010/filter_time_plot.png  used o
-n input line 48.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-<../results/csv/openmp/010/filter1_speedup.png, id=160, 462.528pt x 346.896pt>
-File: ../results/csv/openmp/010/filter1_speedup.png Graphic file (type png)
-<use ../results/csv/openmp/010/filter1_speedup.png>
-Package pdftex.def Info: ../results/csv/openmp/010/filter1_speedup.png  used on
- input line 56.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-<../results/csv/joblib/010/filter_speedup_plot.png, id=161, 462.528pt x 346.896
-pt>
-File: ../results/csv/joblib/010/filter_speedup_plot.png Graphic file (type png)
-
-<use ../results/csv/joblib/010/filter_speedup_plot.png>
-Package pdftex.def Info: ../results/csv/joblib/010/filter_speedup_plot.png  use
-d on input line 60.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-<../results/csv/openmp/010/filter_fpr.png, id=162, 462.528pt x 346.896pt>
-File: ../results/csv/openmp/010/filter_fpr.png Graphic file (type png)
-<use ../results/csv/openmp/010/filter_fpr.png>
-Package pdftex.def Info: ../results/csv/openmp/010/filter_fpr.png  used on inpu
-t line 68.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-<../results/csv/joblib/010/filter_fpr_plot.png, id=163, 462.528pt x 346.896pt>
-File: ../results/csv/joblib/010/filter_fpr_plot.png Graphic file (type png)
-<use ../results/csv/joblib/010/filter_fpr_plot.png>
-Package pdftex.def Info: ../results/csv/joblib/010/filter_fpr_plot.png  used on
- input line 72.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
- [7 <../results/csv/openmp/010/setup_fpr.png> <../results/csv/joblib/010/setup_
-fpr_plot.png> <../results/csv/openmp/010/filter1_times.png> <../results/csv/job
-lib/010/filter_time_plot.png>]
-<../results/csv/joblib/010/chunks_time_plot.png, id=176, 462.528pt x 346.896pt>
-
-File: ../results/csv/joblib/010/chunks_time_plot.png Graphic file (type png)
-<use ../results/csv/joblib/010/chunks_time_plot.png>
-Package pdftex.def Info: ../results/csv/joblib/010/chunks_time_plot.png  used o
-n input line 82.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-<../results/csv/joblib/010/chunks_speedup_plot.png, id=177, 462.528pt x 346.896
-pt>
-File: ../results/csv/joblib/010/chunks_speedup_plot.png Graphic file (type png)
-
-<use ../results/csv/joblib/010/chunks_speedup_plot.png>
-Package pdftex.def Info: ../results/csv/joblib/010/chunks_speedup_plot.png  use
-d on input line 86.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
- [8 <../results/csv/openmp/010/filter1_speedup.png> <../results/csv/joblib/010/
-filter_speedup_plot.png> <../results/csv/openmp/010/filter_fpr.png> <../results
-/csv/joblib/010/filter_fpr_plot.png>]
-<../results/csv/openmp/005/setup_times.png, id=188, 462.528pt x 346.896pt>
-File: ../results/csv/openmp/005/setup_times.png Graphic file (type png)
-<use ../results/csv/openmp/005/setup_times.png>
-Package pdftex.def Info: ../results/csv/openmp/005/setup_times.png  used on inp
-ut line 99.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-<../results/csv/joblib/005/setup_time_plot.png, id=189, 462.528pt x 346.896pt>
-File: ../results/csv/joblib/005/setup_time_plot.png Graphic file (type png)
-<use ../results/csv/joblib/005/setup_time_plot.png>
-Package pdftex.def Info: ../results/csv/joblib/005/setup_time_plot.png  used on
- input line 103.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-<../results/csv/openmp/005/setup_speedup.png, id=190, 462.528pt x 346.896pt>
-File: ../results/csv/openmp/005/setup_speedup.png Graphic file (type png)
-<use ../results/csv/openmp/005/setup_speedup.png>
-Package pdftex.def Info: ../results/csv/openmp/005/setup_speedup.png  used on i
-nput line 111.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-<../results/csv/joblib/005/setup_speedup_plot.png, id=191, 462.528pt x 346.896p
-t>
-File: ../results/csv/joblib/005/setup_speedup_plot.png Graphic file (type png)
-<use ../results/csv/joblib/005/setup_speedup_plot.png>
-Package pdftex.def Info: ../results/csv/joblib/005/setup_speedup_plot.png  used
- on input line 115.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-<../results/csv/openmp/005/setup_fpr.png, id=192, 462.528pt x 346.896pt>
-File: ../results/csv/openmp/005/setup_fpr.png Graphic file (type png)
-<use ../results/csv/openmp/005/setup_fpr.png>
-Package pdftex.def Info: ../results/csv/openmp/005/setup_fpr.png  used on input
- line 123.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-File: ../results/csv/joblib/005/setup_time_plot.png Graphic file (type png)
-<use ../results/csv/joblib/005/setup_time_plot.png>
-Package pdftex.def Info: ../results/csv/joblib/005/setup_time_plot.png  used on
- input line 127.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
- [9 <../results/csv/joblib/010/chunks_time_plot.png> <../results/csv/joblib/010
-/chunks_speedup_plot.png> <../results/csv/openmp/005/setup_times.png> <../resul
-ts/csv/joblib/005/setup_time_plot.png>]
-<../results/csv/openmp/005/filter1_times.png, id=206, 462.528pt x 346.896pt>
-File: ../results/csv/openmp/005/filter1_times.png Graphic file (type png)
-<use ../results/csv/openmp/005/filter1_times.png>
-Package pdftex.def Info: ../results/csv/openmp/005/filter1_times.png  used on i
-nput line 136.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-<../results/csv/joblib/005/filter_time_plot.png, id=207, 462.528pt x 346.896pt>
-
-File: ../results/csv/joblib/005/filter_time_plot.png Graphic file (type png)
-<use ../results/csv/joblib/005/filter_time_plot.png>
-Package pdftex.def Info: ../results/csv/joblib/005/filter_time_plot.png  used o
-n input line 140.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-<../results/csv/openmp/005/filter1_speedup.png, id=208, 462.528pt x 346.896pt>
-File: ../results/csv/openmp/005/filter1_speedup.png Graphic file (type png)
-<use ../results/csv/openmp/005/filter1_speedup.png>
-Package pdftex.def Info: ../results/csv/openmp/005/filter1_speedup.png  used on
- input line 148.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-<../results/csv/joblib/005/filter_speedup_plot.png, id=209, 462.528pt x 346.896
-pt>
-File: ../results/csv/joblib/005/filter_speedup_plot.png Graphic file (type png)
-
-<use ../results/csv/joblib/005/filter_speedup_plot.png>
-Package pdftex.def Info: ../results/csv/joblib/005/filter_speedup_plot.png  use
-d on input line 152.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
- [10 <../results/csv/openmp/005/setup_speedup.png> <../results/csv/joblib/005/s
-etup_speedup_plot.png> <../results/csv/openmp/005/setup_fpr.png>]
-<../results/csv/openmp/005/filter_fpr.png, id=219, 462.528pt x 346.896pt>
-File: ../results/csv/openmp/005/filter_fpr.png Graphic file (type png)
-<use ../results/csv/openmp/005/filter_fpr.png>
-Package pdftex.def Info: ../results/csv/openmp/005/filter_fpr.png  used on inpu
-t line 160.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-<../results/csv/joblib/005/filter_fpr_plot.png, id=220, 462.528pt x 346.896pt>
-File: ../results/csv/joblib/005/filter_fpr_plot.png Graphic file (type png)
-<use ../results/csv/joblib/005/filter_fpr_plot.png>
-Package pdftex.def Info: ../results/csv/joblib/005/filter_fpr_plot.png  used on
- input line 164.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
- [11 <../results/csv/openmp/005/filter1_times.png> <../results/csv/joblib/005/f
-ilter_time_plot.png> <../results/csv/openmp/005/filter1_speedup.png> <../result
-s/csv/joblib/005/filter_speedup_plot.png>]
-<../results/csv/joblib/005/chunks_time_plot.png, id=232, 462.528pt x 346.896pt>
-
-File: ../results/csv/joblib/005/chunks_time_plot.png Graphic file (type png)
-<use ../results/csv/joblib/005/chunks_time_plot.png>
-Package pdftex.def Info: ../results/csv/joblib/005/chunks_time_plot.png  used o
-n input line 173.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-<../results/csv/joblib/005/chunks_speedup_plot.png, id=233, 462.528pt x 346.896
-pt>
-File: ../results/csv/joblib/005/chunks_speedup_plot.png Graphic file (type png)
-
-<use ../results/csv/joblib/005/chunks_speedup_plot.png>
-Package pdftex.def Info: ../results/csv/joblib/005/chunks_speedup_plot.png  use
-d on input line 177.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-<../results/csv/openmp/001/setup_times.png, id=234, 462.528pt x 346.896pt>
-File: ../results/csv/openmp/001/setup_times.png Graphic file (type png)
-<use ../results/csv/openmp/001/setup_times.png>
-Package pdftex.def Info: ../results/csv/openmp/001/setup_times.png  used on inp
-ut line 188.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-<../results/csv/joblib/001/setup_time_plot.png, id=235, 462.528pt x 346.896pt>
-File: ../results/csv/joblib/001/setup_time_plot.png Graphic file (type png)
-<use ../results/csv/joblib/001/setup_time_plot.png>
-Package pdftex.def Info: ../results/csv/joblib/001/setup_time_plot.png  used on
- input line 192.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-<../results/csv/openmp/001/setup_speedup.png, id=236, 462.528pt x 346.896pt>
-File: ../results/csv/openmp/001/setup_speedup.png Graphic file (type png)
-<use ../results/csv/openmp/001/setup_speedup.png>
-Package pdftex.def Info: ../results/csv/openmp/001/setup_speedup.png  used on i
-nput line 200.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-<../results/csv/joblib/001/setup_speedup_plot.png, id=237, 462.528pt x 346.896p
-t>
-File: ../results/csv/joblib/001/setup_speedup_plot.png Graphic file (type png)
-<use ../results/csv/joblib/001/setup_speedup_plot.png>
-Package pdftex.def Info: ../results/csv/joblib/001/setup_speedup_plot.png  used
- on input line 204.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
- [12 <../results/csv/openmp/005/filter_fpr.png> <../results/csv/joblib/005/filt
-er_fpr_plot.png> <../results/csv/joblib/005/chunks_time_plot.png> <../results/c
-sv/joblib/005/chunks_speedup_plot.png>]
-<../results/csv/openmp/001/setup_fpr.png, id=249, 462.528pt x 346.896pt>
-File: ../results/csv/openmp/001/setup_fpr.png Graphic file (type png)
-<use ../results/csv/openmp/001/setup_fpr.png>
-Package pdftex.def Info: ../results/csv/openmp/001/setup_fpr.png  used on input
- line 212.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-<../results/csv/joblib/001/setup_fpr_plot.png, id=250, 462.528pt x 346.896pt>
-File: ../results/csv/joblib/001/setup_fpr_plot.png Graphic file (type png)
-<use ../results/csv/joblib/001/setup_fpr_plot.png>
-Package pdftex.def Info: ../results/csv/joblib/001/setup_fpr_plot.png  used on 
-input line 216.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
- [13 <../results/csv/openmp/001/setup_times.png> <../results/csv/joblib/001/set
-up_time_plot.png> <../results/csv/openmp/001/setup_speedup.png> <../results/csv
-/joblib/001/setup_speedup_plot.png>]
-<../results/csv/openmp/001/filter1_times.png, id=264, 462.528pt x 346.896pt>
-File: ../results/csv/openmp/001/filter1_times.png Graphic file (type png)
-<use ../results/csv/openmp/001/filter1_times.png>
-Package pdftex.def Info: ../results/csv/openmp/001/filter1_times.png  used on i
-nput line 226.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-<../results/csv/joblib/001/filter_time_plot.png, id=265, 462.528pt x 346.896pt>
-
-File: ../results/csv/joblib/001/filter_time_plot.png Graphic file (type png)
-<use ../results/csv/joblib/001/filter_time_plot.png>
-Package pdftex.def Info: ../results/csv/joblib/001/filter_time_plot.png  used o
-n input line 230.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-<../results/csv/openmp/001/filter1_speedup.png, id=266, 462.528pt x 346.896pt>
-File: ../results/csv/openmp/001/filter1_speedup.png Graphic file (type png)
-<use ../results/csv/openmp/001/filter1_speedup.png>
-Package pdftex.def Info: ../results/csv/openmp/001/filter1_speedup.png  used on
- input line 238.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-<../results/csv/joblib/001/filter_speedup_plot.png, id=267, 462.528pt x 346.896
-pt>
-File: ../results/csv/joblib/001/filter_speedup_plot.png Graphic file (type png)
-
-<use ../results/csv/joblib/001/filter_speedup_plot.png>
-Package pdftex.def Info: ../results/csv/joblib/001/filter_speedup_plot.png  use
-d on input line 242.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-<../results/csv/openmp/001/filter_fpr.png, id=268, 462.528pt x 346.896pt>
-File: ../results/csv/openmp/001/filter_fpr.png Graphic file (type png)
-<use ../results/csv/openmp/001/filter_fpr.png>
-Package pdftex.def Info: ../results/csv/openmp/001/filter_fpr.png  used on inpu
-t line 250.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-<../results/csv/joblib/001/filter_fpr_plot.png, id=269, 462.528pt x 346.896pt>
-File: ../results/csv/joblib/001/filter_fpr_plot.png Graphic file (type png)
-<use ../results/csv/joblib/001/filter_fpr_plot.png>
-Package pdftex.def Info: ../results/csv/joblib/001/filter_fpr_plot.png  used on
- input line 254.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
- [14 <../results/csv/openmp/001/setup_fpr.png> <../results/csv/joblib/001/setup
-_fpr_plot.png> <../results/csv/openmp/001/filter1_times.png> <../results/csv/jo
-blib/001/filter_time_plot.png>]
-<../results/csv/joblib/001/chunks_time_plot.png, id=281, 462.528pt x 346.896pt>
-
-File: ../results/csv/joblib/001/chunks_time_plot.png Graphic file (type png)
-<use ../results/csv/joblib/001/chunks_time_plot.png>
-Package pdftex.def Info: ../results/csv/joblib/001/chunks_time_plot.png  used o
-n input line 264.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-<../results/csv/joblib/001/chunks_speedup_plot.png, id=282, 462.528pt x 346.896
-pt>
-File: ../results/csv/joblib/001/chunks_speedup_plot.png Graphic file (type png)
-
-<use ../results/csv/joblib/001/chunks_speedup_plot.png>
-Package pdftex.def Info: ../results/csv/joblib/001/chunks_speedup_plot.png  use
-d on input line 268.
-(pdftex.def)             Requested size: 176.40198pt x 132.30353pt.
-) [15 <../results/csv/openmp/001/filter1_speedup.png> <../results/csv/joblib/00
-1/filter_speedup_plot.png> <../results/csv/openmp/001/filter_fpr.png> <../resul
-ts/csv/joblib/001/filter_fpr_plot.png>] [16 <../results/csv/joblib/001/chunks_t
-ime_plot.png> <../results/csv/joblib/001/chunks_speedup_plot.png>]
 (C:/Users\loreb\Documents\IntellijProjects\PycharmProjects\bloomfilter_parallel
 \auxil\relation.aux)
 
@@ -821,35 +781,35 @@ Package rerunfilecheck Warning: File `relation.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `relation.out':
-(rerunfilecheck)             Before: 5E904EC5ADE16AC2F7A4D6BE7390DB89;554
-(rerunfilecheck)             After:  9E4C0D1270D0A9F01DFCB4B9C16B88C6;2192.
+(rerunfilecheck)             Before: 30E4D1E9FD0531F9D79C47C302B78043;1315
+(rerunfilecheck)             After:  65B856A4E22F2F3449D68E1C6FD30FC9;2241.
  ) 
 Here is how much of TeX's memory you used:
- 15503 strings out of 476331
- 271739 string characters out of 5787764
- 2058660 words of memory out of 12000000
- 35553 multiletter control sequences out of 15000+600000
+ 14899 strings out of 476331
+ 251674 string characters out of 5787764
+ 2012660 words of memory out of 12000000
+ 35042 multiletter control sequences out of 15000+600000
  519331 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,77p,514b,2086s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,9n,77p,507b,2205s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\loreb\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1095.pk><C:/Users/loreb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/loreb/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmbx12.pfb><C:/Users/loreb/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmmi10.pfb><C:/Users/loreb/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/loreb/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/loreb/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/loreb/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/lor
-eb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Us
-ers/loreb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb><C:/Users/loreb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmtt10.pfb><C:/Users/loreb/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmtt9.pfb>
+X/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/loreb/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/loreb/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/loreb/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/lo
+reb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/U
+sers/loreb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pf
+b><C:/Users/loreb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmsy10.pfb><C:/Users/loreb/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmtt9.pfb>
 Output written on C:/Users\loreb\Documents\IntellijProjects\PycharmProjects\blo
-omfilter_parallel\out\relation.pdf (16 pages, 2082406 bytes).
+omfilter_parallel\out\relation.pdf (10 pages, 493969 bytes).
 PDF statistics:
- 383 PDF objects out of 1000 (max. 8388607)
- 139 named destinations out of 1000 (max. 500000)
- 246 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 265 PDF objects out of 1000 (max. 8388607)
+ 90 named destinations out of 1000 (max. 500000)
+ 150 words of extra memory for PDF output out of 10000 (max. 10000000)
 
