@@ -21,24 +21,26 @@
 \newlabel{eq:num_hash}{{2}{2}{Analisi del problema}{equation.2.2}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3}Parallelizzazione}{3}{section.3}\protected@file@percent }
 \newlabel{sec:parallelizazzione}{{3}{3}{Parallelizzazione}{section.3}{}}
-\newlabel{lst:sequential-code-setup-joblib}{{3}{3}{}{lstlisting.-1}{}}
-\@writefile{lol}{\contentsline {lstlisting}{../src/bloom\textunderscore filter.py}{3}{lstlisting.-1}\protected@file@percent }
-\newlabel{lst:sequential-code-setup-omp}{{3}{3}{}{lstlisting.-2}{}}
-\@writefile{lol}{\contentsline {lstlisting}{BloomFilter.cpp}{3}{lstlisting.-2}\protected@file@percent }
-\newlabel{lst:sequential-code-filter-joblib}{{3}{3}{}{lstlisting.-3}{}}
-\@writefile{lol}{\contentsline {lstlisting}{../src/bloom\textunderscore filter.py}{3}{lstlisting.-3}\protected@file@percent }
-\newlabel{lst:sequential-code-filter-omp}{{3}{3}{}{lstlisting.-4}{}}
-\@writefile{lol}{\contentsline {lstlisting}{BloomFilter.cpp}{3}{lstlisting.-4}\protected@file@percent }
+\newlabel{lst:sequential-code-setup-omp}{{3}{3}{}{lstlisting.-1}{}}
+\@writefile{lol}{\contentsline {lstlisting}{BloomFilter.cpp}{3}{lstlisting.-1}\protected@file@percent }
+\newlabel{lst:sequential-code-setup-joblib}{{3}{3}{}{lstlisting.-2}{}}
+\@writefile{lol}{\contentsline {lstlisting}{../src/bloom\textunderscore filter.py}{3}{lstlisting.-2}\protected@file@percent }
+\newlabel{lst:sequential-code-filter-omp}{{3}{3}{}{lstlisting.-3}{}}
+\@writefile{lol}{\contentsline {lstlisting}{BloomFilter.cpp}{3}{lstlisting.-3}\protected@file@percent }
+\newlabel{lst:sequential-code-filter-joblib}{{3}{3}{}{lstlisting.-4}{}}
+\@writefile{lol}{\contentsline {lstlisting}{../src/bloom\textunderscore filter.py}{3}{lstlisting.-4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}OpenMP}{3}{subsection.3.1}\protected@file@percent }
 \newlabel{subsec:omp}{{3.1}{3}{OpenMP}{subsection.3.1}{}}
-\newlabel{lst:sequential-code}{{3.1}{4}{}{lstlisting.-5}{}}
+\newlabel{lst:openmp-setup-code}{{3.1}{4}{}{lstlisting.-5}{}}
 \@writefile{lol}{\contentsline {lstlisting}{BloomFilter.cpp}{4}{lstlisting.-5}\protected@file@percent }
+\newlabel{lst:openmp-filter-code}{{3.1}{4}{}{lstlisting.-6}{}}
+\@writefile{lol}{\contentsline {lstlisting}{BloomFilter.cpp}{4}{lstlisting.-6}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Joblib}{4}{subsection.3.2}\protected@file@percent }
 \newlabel{subsec:joblib}{{3.2}{4}{Joblib}{subsection.3.2}{}}
-\newlabel{lst:joblib-code-setup}{{3.2}{4}{}{lstlisting.-6}{}}
-\@writefile{lol}{\contentsline {lstlisting}{../src/bloom\textunderscore filter.py}{4}{lstlisting.-6}\protected@file@percent }
-\newlabel{lst:joblib-code-filter}{{3.2}{5}{}{lstlisting.-7}{}}
+\newlabel{lst:joblib-code-setup}{{3.2}{5}{}{lstlisting.-7}{}}
 \@writefile{lol}{\contentsline {lstlisting}{../src/bloom\textunderscore filter.py}{5}{lstlisting.-7}\protected@file@percent }
+\newlabel{lst:joblib-code-filter}{{3.2}{5}{}{lstlisting.-8}{}}
+\@writefile{lol}{\contentsline {lstlisting}{../src/bloom\textunderscore filter.py}{5}{lstlisting.-8}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {4}Caratteristiche della macchina}{5}{section.4}\protected@file@percent }
 \newlabel{sec:caratteristiche-della-macchina}{{4}{5}{Caratteristiche della macchina}{section.4}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {5}Test}{6}{section.5}\protected@file@percent }
@@ -80,78 +82,80 @@
 \newlabel{fig:005-chunks_time}{{13}{9}{Times setup Chunks}{figure.caption.7}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Speedup setup Chunks}}{9}{figure.caption.7}\protected@file@percent }
 \newlabel{fig:005-chunks_speedup}{{14}{9}{Speedup setup Chunks}{figure.caption.7}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}FPR: 0.01}{9}{subsection.5.2}\protected@file@percent }
-\newlabel{subsec:fpr-001}{{5.2}{9}{FPR: 0.01}{subsection.5.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}Setup}{10}{subsubsection.5.2.1}\protected@file@percent }
-\newlabel{subsubsec:setup}{{5.2.1}{10}{Setup}{subsubsection.5.2.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Speedup setup Omp}}{10}{figure.caption.8}\protected@file@percent }
-\newlabel{fig:setup_time_omp}{{15}{10}{Speedup setup Omp}{figure.caption.8}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Speedup setup Joblib}}{10}{figure.caption.8}\protected@file@percent }
-\newlabel{fig:setup_time_joblib}{{16}{10}{Speedup setup Joblib}{figure.caption.8}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Speedup setup Omp}}{10}{figure.caption.9}\protected@file@percent }
-\newlabel{fig:setup_speedup_omp}{{17}{10}{Speedup setup Omp}{figure.caption.9}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Speedup setup Joblib}}{10}{figure.caption.9}\protected@file@percent }
-\newlabel{fig:setup_speedup_joblib}{{18}{10}{Speedup setup Joblib}{figure.caption.9}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Speedup setup Omp}}{10}{figure.caption.10}\protected@file@percent }
-\newlabel{fig:setup_fpr_omp}{{19}{10}{Speedup setup Omp}{figure.caption.10}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Speedup setup Joblib}}{10}{figure.caption.10}\protected@file@percent }
-\newlabel{fig:setup_fpr_joblib}{{20}{10}{Speedup setup Joblib}{figure.caption.10}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}Filter}{11}{subsubsection.5.2.2}\protected@file@percent }
-\newlabel{subsubsec:filter}{{5.2.2}{11}{Filter}{subsubsection.5.2.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Times filter Omp}}{11}{figure.caption.11}\protected@file@percent }
-\newlabel{fig:filter_time_omp}{{21}{11}{Times filter Omp}{figure.caption.11}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Times filter Joblib}}{11}{figure.caption.11}\protected@file@percent }
-\newlabel{fig:filter_time_joblib}{{22}{11}{Times filter Joblib}{figure.caption.11}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces Speedup filter Omp}}{11}{figure.caption.12}\protected@file@percent }
-\newlabel{fig:filter_speedup_omp}{{23}{11}{Speedup filter Omp}{figure.caption.12}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces Speedup filter Joblib}}{11}{figure.caption.12}\protected@file@percent }
-\newlabel{fig:filter_speedup_joblib}{{24}{11}{Speedup filter Joblib}{figure.caption.12}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces FPR filter Omp}}{12}{figure.caption.13}\protected@file@percent }
-\newlabel{fig:filter_fpr_omp}{{25}{12}{FPR filter Omp}{figure.caption.13}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces FPR filter Joblib}}{12}{figure.caption.13}\protected@file@percent }
-\newlabel{fig:filter_fpr_joblib}{{26}{12}{FPR filter Joblib}{figure.caption.13}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.3}Chunks}{12}{subsubsection.5.2.3}\protected@file@percent }
-\newlabel{subsubsec:chunks}{{5.2.3}{12}{Chunks}{subsubsection.5.2.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {27}{\ignorespaces Times chunks Joblib}}{12}{figure.caption.14}\protected@file@percent }
-\newlabel{fig:chunks_time_joblib}{{27}{12}{Times chunks Joblib}{figure.caption.14}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {28}{\ignorespaces Speedup chunks Joblib}}{12}{figure.caption.14}\protected@file@percent }
-\newlabel{fig:chunks_speedup_joblib}{{28}{12}{Speedup chunks Joblib}{figure.caption.14}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}FPR: 0.10}{12}{subsection.5.3}\protected@file@percent }
-\newlabel{subsec:fpr-010}{{5.3}{12}{FPR: 0.10}{subsection.5.3}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1}Setup}{13}{subsubsection.5.3.1}\protected@file@percent }
-\newlabel{subsubsec:fpr-010-setup}{{5.3.1}{13}{Setup}{subsubsection.5.3.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {29}{\ignorespaces Time setup Omp}}{13}{figure.caption.15}\protected@file@percent }
-\newlabel{fig:010-setup_time_omp}{{29}{13}{Time setup Omp}{figure.caption.15}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {30}{\ignorespaces Time setup Joblib}}{13}{figure.caption.15}\protected@file@percent }
-\newlabel{fig:010setup_time_joblib}{{30}{13}{Time setup Joblib}{figure.caption.15}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {31}{\ignorespaces Speedup setup Omp}}{13}{figure.caption.16}\protected@file@percent }
-\newlabel{fig:010-setup_speedup_omp}{{31}{13}{Speedup setup Omp}{figure.caption.16}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {32}{\ignorespaces Speedup setup Joblib}}{13}{figure.caption.16}\protected@file@percent }
-\newlabel{fig:010-setup_speedup_joblib}{{32}{13}{Speedup setup Joblib}{figure.caption.16}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {33}{\ignorespaces FPR setup Omp}}{13}{figure.caption.17}\protected@file@percent }
-\newlabel{fig:010-setup_fpr_omp}{{33}{13}{FPR setup Omp}{figure.caption.17}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {34}{\ignorespaces FPR setup Joblib}}{13}{figure.caption.17}\protected@file@percent }
-\newlabel{fig:010-setup_fpr_joblib}{{34}{13}{FPR setup Joblib}{figure.caption.17}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2}Filter}{14}{subsubsection.5.3.2}\protected@file@percent }
-\newlabel{subsubsec:fpr-010-filter}{{5.3.2}{14}{Filter}{subsubsection.5.3.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {35}{\ignorespaces Time setup Omp}}{14}{figure.caption.18}\protected@file@percent }
-\newlabel{fig:010-filter_time_omp}{{35}{14}{Time setup Omp}{figure.caption.18}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {36}{\ignorespaces Speedup setup Joblib}}{14}{figure.caption.18}\protected@file@percent }
-\newlabel{fig:010-filter_time_joblib}{{36}{14}{Speedup setup Joblib}{figure.caption.18}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {37}{\ignorespaces Speedup setup Omp}}{14}{figure.caption.19}\protected@file@percent }
-\newlabel{fig:010-filter_speedup_omp}{{37}{14}{Speedup setup Omp}{figure.caption.19}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {38}{\ignorespaces Speedup setup Joblib}}{14}{figure.caption.19}\protected@file@percent }
-\newlabel{fig:010-filter_speedup_joblib}{{38}{14}{Speedup setup Joblib}{figure.caption.19}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {39}{\ignorespaces FPR Filter Omp}}{15}{figure.caption.20}\protected@file@percent }
-\newlabel{fig:010-filter_fpr_omp}{{39}{15}{FPR Filter Omp}{figure.caption.20}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {40}{\ignorespaces FPR Filter Joblib}}{15}{figure.caption.20}\protected@file@percent }
-\newlabel{fig:010-filter_fpr_joblib}{{40}{15}{FPR Filter Joblib}{figure.caption.20}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.3}Chunks}{15}{subsubsection.5.3.3}\protected@file@percent }
-\newlabel{subsubsec:010-chunks}{{5.3.3}{15}{Chunks}{subsubsection.5.3.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {41}{\ignorespaces Times setup Chunk}}{15}{figure.caption.21}\protected@file@percent }
-\newlabel{fig:010-chunks_time}{{41}{15}{Times setup Chunk}{figure.caption.21}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {42}{\ignorespaces Speedup setup Chunk}}{15}{figure.caption.21}\protected@file@percent }
-\newlabel{fig:010-chunks_speedup}{{42}{15}{Speedup setup Chunk}{figure.caption.21}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusioni}{16}{section.6}\protected@file@percent }
-\newlabel{sec:conclusioni}{{6}{16}{Conclusioni}{section.6}{}}
-\gdef \@abspage@last{16}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusioni}{10}{section.6}\protected@file@percent }
+\newlabel{sec:conclusioni}{{6}{10}{Conclusioni}{section.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Appendice}{11}{section.7}\protected@file@percent }
+\newlabel{sec:appendice}{{7}{11}{Appendice}{section.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}FPR: 0.01}{11}{subsection.7.1}\protected@file@percent }
+\newlabel{subsec:fpr-001}{{7.1}{11}{FPR: 0.01}{subsection.7.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.1.1}Setup}{11}{subsubsection.7.1.1}\protected@file@percent }
+\newlabel{subsubsec:setup}{{7.1.1}{11}{Setup}{subsubsection.7.1.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Speedup setup Omp}}{11}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:setup_time_omp}{{15}{11}{Speedup setup Omp}{figure.caption.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Speedup setup Joblib}}{11}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:setup_time_joblib}{{16}{11}{Speedup setup Joblib}{figure.caption.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Speedup setup Omp}}{11}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:setup_speedup_omp}{{17}{11}{Speedup setup Omp}{figure.caption.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Speedup setup Joblib}}{11}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:setup_speedup_joblib}{{18}{11}{Speedup setup Joblib}{figure.caption.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Speedup setup Omp}}{12}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:setup_fpr_omp}{{19}{12}{Speedup setup Omp}{figure.caption.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Speedup setup Joblib}}{12}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:setup_fpr_joblib}{{20}{12}{Speedup setup Joblib}{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.1.2}Filter}{12}{subsubsection.7.1.2}\protected@file@percent }
+\newlabel{subsubsec:filter}{{7.1.2}{12}{Filter}{subsubsection.7.1.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Times filter Omp}}{12}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:filter_time_omp}{{21}{12}{Times filter Omp}{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Times filter Joblib}}{12}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:filter_time_joblib}{{22}{12}{Times filter Joblib}{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces Speedup filter Omp}}{13}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:filter_speedup_omp}{{23}{13}{Speedup filter Omp}{figure.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces Speedup filter Joblib}}{13}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:filter_speedup_joblib}{{24}{13}{Speedup filter Joblib}{figure.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces FPR filter Omp}}{13}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:filter_fpr_omp}{{25}{13}{FPR filter Omp}{figure.caption.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces FPR filter Joblib}}{13}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:filter_fpr_joblib}{{26}{13}{FPR filter Joblib}{figure.caption.13}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.1.3}Chunks}{14}{subsubsection.7.1.3}\protected@file@percent }
+\newlabel{subsubsec:chunks}{{7.1.3}{14}{Chunks}{subsubsection.7.1.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {27}{\ignorespaces Times chunks Joblib}}{14}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:chunks_time_joblib}{{27}{14}{Times chunks Joblib}{figure.caption.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {28}{\ignorespaces Speedup chunks Joblib}}{14}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:chunks_speedup_joblib}{{28}{14}{Speedup chunks Joblib}{figure.caption.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}FPR: 0.10}{14}{subsection.7.2}\protected@file@percent }
+\newlabel{subsec:fpr-010}{{7.2}{14}{FPR: 0.10}{subsection.7.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.1}Setup}{14}{subsubsection.7.2.1}\protected@file@percent }
+\newlabel{subsubsec:fpr-010-setup}{{7.2.1}{14}{Setup}{subsubsection.7.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {29}{\ignorespaces Time setup Omp}}{14}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:010-setup_time_omp}{{29}{14}{Time setup Omp}{figure.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {30}{\ignorespaces Time setup Joblib}}{14}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:010setup_time_joblib}{{30}{14}{Time setup Joblib}{figure.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {31}{\ignorespaces Speedup setup Omp}}{15}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:010-setup_speedup_omp}{{31}{15}{Speedup setup Omp}{figure.caption.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {32}{\ignorespaces Speedup setup Joblib}}{15}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:010-setup_speedup_joblib}{{32}{15}{Speedup setup Joblib}{figure.caption.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {33}{\ignorespaces FPR setup Omp}}{15}{figure.caption.17}\protected@file@percent }
+\newlabel{fig:010-setup_fpr_omp}{{33}{15}{FPR setup Omp}{figure.caption.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {34}{\ignorespaces FPR setup Joblib}}{15}{figure.caption.17}\protected@file@percent }
+\newlabel{fig:010-setup_fpr_joblib}{{34}{15}{FPR setup Joblib}{figure.caption.17}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.2}Filter}{16}{subsubsection.7.2.2}\protected@file@percent }
+\newlabel{subsubsec:fpr-010-filter}{{7.2.2}{16}{Filter}{subsubsection.7.2.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {35}{\ignorespaces Time setup Omp}}{16}{figure.caption.18}\protected@file@percent }
+\newlabel{fig:010-filter_time_omp}{{35}{16}{Time setup Omp}{figure.caption.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {36}{\ignorespaces Speedup setup Joblib}}{16}{figure.caption.18}\protected@file@percent }
+\newlabel{fig:010-filter_time_joblib}{{36}{16}{Speedup setup Joblib}{figure.caption.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {37}{\ignorespaces Speedup setup Omp}}{16}{figure.caption.19}\protected@file@percent }
+\newlabel{fig:010-filter_speedup_omp}{{37}{16}{Speedup setup Omp}{figure.caption.19}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {38}{\ignorespaces Speedup setup Joblib}}{16}{figure.caption.19}\protected@file@percent }
+\newlabel{fig:010-filter_speedup_joblib}{{38}{16}{Speedup setup Joblib}{figure.caption.19}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {39}{\ignorespaces FPR Filter Omp}}{16}{figure.caption.20}\protected@file@percent }
+\newlabel{fig:010-filter_fpr_omp}{{39}{16}{FPR Filter Omp}{figure.caption.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {40}{\ignorespaces FPR Filter Joblib}}{16}{figure.caption.20}\protected@file@percent }
+\newlabel{fig:010-filter_fpr_joblib}{{40}{16}{FPR Filter Joblib}{figure.caption.20}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.3}Chunks}{17}{subsubsection.7.2.3}\protected@file@percent }
+\newlabel{subsubsec:010-chunks}{{7.2.3}{17}{Chunks}{subsubsection.7.2.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {41}{\ignorespaces Times setup Chunk}}{17}{figure.caption.21}\protected@file@percent }
+\newlabel{fig:010-chunks_time}{{41}{17}{Times setup Chunk}{figure.caption.21}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {42}{\ignorespaces Speedup setup Chunk}}{17}{figure.caption.21}\protected@file@percent }
+\newlabel{fig:010-chunks_speedup}{{42}{17}{Speedup setup Chunk}{figure.caption.21}{}}
+\gdef \@abspage@last{17}
