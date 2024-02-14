@@ -10,7 +10,7 @@ import numpy as np
 n_threads = os.cpu_count()
 
 # Test
-test_threads = np.linspace(2, n_threads, int(n_threads/2), dtype=int)  # Number of threads to test
+test_threads = np.linspace(2, n_threads*2, int(n_threads/2), dtype=int)  # Number of threads to test
 tests = 10
 test_sizes = np.linspace(1e4, 1e7, tests, dtype=int)  # Number of emails to test setup
 spam_sizes = np.linspace(1e4, 1e7, tests, dtype=int)  # Number of spam emails to test

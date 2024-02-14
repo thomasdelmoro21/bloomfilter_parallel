@@ -60,7 +60,7 @@ int BloomFilter::sequentialFilterAll(std::string items[], size_t nItems) {
     return error;
 }
 
-int BloomFilter::parallelFilterAll1(std::string items[], size_t nItems) {
+int BloomFilter::parallelFilterAll(std::string items[], size_t nItems) {
     int error = 0;
 #pragma omp parallel default(none) shared(items, error) firstprivate(nItems)
     {
@@ -87,7 +87,6 @@ int BloomFilter::parallelFilterAll2(std::string items[], size_t nItems) {
 #pragma omp critical
         error += threadError;
     }
-#pragma omp barrier
     return error;
 }
 

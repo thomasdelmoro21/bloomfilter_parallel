@@ -42,7 +42,7 @@ class BloomFilter:
         self.initialize(items)
 
         # Split items in chunks
-        chunks = np.array_split(items, chunks if chunks else n_threads)
+        chunks = np.array_split(items, chunks if chunks else n_threads*2) # *4
 
         # Start parallel setup
         start = time.time()
