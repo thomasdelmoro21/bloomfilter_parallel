@@ -1,8 +1,12 @@
 I test sono stati effettuati su un dataset da 10000 fino a 10000000 email, con una probabilità di falsi positivi di
 0.10, 0.05 e 0.01.
-Le email sono state generate casualmente tramite le funzioni contenute
-Poiché i test variano da 10000 a 10000000 email, il numero di funzioni hash e la dimensione del vettore di bit sono
-rispettivamente 5, e da un minimo di 62353 a un massimo di 62352243.
+Per una prima valutazione dei tempi di esecuzione, dello speedup e del False Positive Rate, prendiamo in considerazione
+il valore di 0.05 per il FPR. Gli altri valori di FPR sono visualizzabili in appendice~\ref{sec:appendice}.
+Il numero di processi presi in considerazione varia da 1 (sequenziale) al massimo numero di processi disponibili sulla
+macchina utilizzata cioè 16.
+Le email sono state generate casualmente tramite il generatore di email contenuto nel file \texttt{email\_generator.py}.
+Poiché i test variano da 10000 a 10000000 email, il numero di funzioni hash sono circa 5 e la dimensione del vettore di
+bit varia da un minimo di 62353 a un massimo di 62352243.
 
 \subsection{OpenMP}\label{subsec:openmp-test}
 \subsubsection{Setup}\label{subsubsec:openmp-setup}
@@ -25,6 +29,13 @@ rispettivamente 5, e da un minimo di 62353 a un massimo di 62352243.
     \endminipage\hfill
 \end{figure}
 
+Nella valutazione del tempo di esecuzione e dello speedup, è evidente come aumentando il numero di processi, il tempo
+di esecuzione diminuisce in modo significativo rispetto alla versione sequenziale, raggiungendo un massimo di 9 con
+l'utilizzo di 16 processi.
+Possiamo notare come all'aumentare del numero di processi l'aumento dello speedup diminuisce, raggiungendo il valore di 8.
+Per quanto riguarda il False Positive Rate, i valori ottenuti si aggirano molto intorno al valore di FPR
+di 0.05 per il quale è stato configurato il BloomFilter.
+
 \subsubsection{Filter}\label{subsubsec:fpr-005-filter}
 \begin{figure}[H]
     \centering
@@ -45,6 +56,38 @@ rispettivamente 5, e da un minimo di 62353 a un massimo di 62352243.
     \endminipage\hfill
 \end{figure}
 
+Come per la fase di setup, anche in questo caso, aumentando il numero di processi, il tempo di esecuzione diminuisce in
+modo significativo rispetto alla versione sequenziale, raggiungendo un massimo di 11 con l'utilizzo di 16 processi.
+In questo caso però, la variazione dello speedup non diminuisce in maniera più significativa rispetto alla fase di setup.
+Il valore di FPR raggiunge il plateau una volta raggiunto un numero sufficiente di email.
+
+\subsubsection{Confronto Filter}\label{subsubsec:confronto-filter}
+Qui viene preso in considerazione le differenze tra le due versioni implementate del filtro.
+\begin{figure}[H]
+    \centering
+    \minipage{0.49\textwidth}
+    \includegraphics[width=\linewidth]{openmp/filters-005/filter1_times}
+        \caption{Time Filter 1}\label{fig:005-filter1_time_omp}
+    \endminipage\hfill
+    \minipage{0.49\textwidth}
+    \includegraphics[width=\linewidth]{openmp/filters-005/filter1_speedup}
+        \caption{Speedup Filter 1}\label{fig:005-filter1_speedup_omp}
+    \endminipage\hfill
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \minipage{0.49\textwidth}
+    \includegraphics[width=\linewidth]{openmp/filters-005/filter2_times}
+        \caption{Time Filter 2}\label{fig:005-filter2_time_omp}
+    \endminipage\hfill
+    \minipage{0.49\textwidth}
+    \includegraphics[width=\linewidth]{openmp/filters-005/filter2_speedup}
+        \caption{Speedup Filter 2}\label{fig:005-filter2_speedup_omp}
+    \endminipage\hfill
+\end{figure}
+
+Come è possibile notare, le due versioni del filtro presentano performance pressoché identiche in termini sia di tempo
+di esecuzione che di speedup.
 
 \subsection{Joblib}\label{subsec:joblib-test}
 \subsubsection{Setup}\label{subsubsec:joblib-setup}
@@ -66,6 +109,8 @@ rispettivamente 5, e da un minimo di 62353 a un massimo di 62352243.
         \caption{FPR setup Joblib}\label{fig:005-setup_fpr_joblib}
     \endminipage\hfill
 \end{figure}
+
+I risultati ottenuti con la versione Joblib mostrano come l'aumento del numero di processori
 
 \subsubsection{Filter}\label{subsubsec:joblib-filter}
 \begin{figure}

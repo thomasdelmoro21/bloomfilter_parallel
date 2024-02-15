@@ -42,7 +42,6 @@ double BloomFilter::parallelSetup(std::string items[], std::size_t nItems) {
             }
         }
     }
-#pragma omp barrier
     return omp_get_wtime() - start;
 }
 
@@ -60,7 +59,7 @@ int BloomFilter::sequentialFilterAll(std::string items[], size_t nItems) {
     return error;
 }
 
-int BloomFilter::parallelFilterAll(std::string items[], size_t nItems) {
+int BloomFilter::parallelFilterAll1(std::string items[], size_t nItems) {
     int error = 0;
 #pragma omp parallel default(none) shared(items, error) firstprivate(nItems)
     {
@@ -79,12 +78,12 @@ int BloomFilter::parallelFilterAll2(std::string items[], size_t nItems) {
     int threadError = 0;
 #pragma omp parallel default(none) shared(items, error) firstprivate(nItems, threadError)
     {
-#pragma omp for
+#pragma omp for nowait
         for (std::size_t i = 0; i < nItems; i++) {
             if (filter(items[i]))
                 threadError++;
         }
-#pragma omp critical
+#pragma omp atomic
         error += threadError;
     }
     return error;

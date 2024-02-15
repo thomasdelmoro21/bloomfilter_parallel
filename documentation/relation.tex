@@ -86,34 +86,7 @@
     funzioni hash e verifica se i bit corrispondenti alle posizioni calcolate sono settati a 1.
 
     \section{Parallelizzazione}\label{sec:parallelizazzione}
-    Il codice sequenziale di riferimento da parallelizzare per la fase di setup è il seguente, rispettivamente per la versione c++ e python:
-    \lstinputlisting[language=c++, firstline=22, lastline=28,label={lst:sequential-code-setup-omp}]{BloomFilter.cpp}
-    \lstinputlisting[language=python, firstline=33, lastline=39,label={lst:sequential-code-setup-joblib}]{../src/bloom_filter.py}
-
-    Il codice sequenziale di riferimento da parallelizzare per la fase di filter è il seguente, rispettivamente per la versione c++ e python:
-    \lstinputlisting[language=c++, firstline=55, lastline=61,label={lst:sequential-code-filter-omp}]{BloomFilter.cpp}
-    \lstinputlisting[language=python, firstline=58, lastline=66,label={lst:sequential-code-filter-joblib}]{../src/bloom_filter.py}
-
-    \subsection{OpenMP}\label{subsec:omp}
-    OpenMP (Omp) è una libreria in linguaggio C progettata per consentire la parallelizzazione di funzioni e cicli for.
-    Nel contesto di questo lavoro, abbiamo adottato la funzione \texttt{omp parallel for} per parallelizzare le operazioni
-    di setup e filtraggio del BloomFilter.
-
-    Successivamente, abbiamo analizzato il tempo impiegato dalle funzioni di setup e filtraggio in relazione al numero
-    di processi utilizzati, confrontandolo con il tempo richiesto nella versione sequenziale.
-    \lstinputlisting[language=c++, firstline=30, lastline=47, label={lst:openmp-setup-code}]{BloomFilter.cpp}
-    \lstinputlisting[language=c++, firstline=63, lastline=75, label={lst:openmp-filter-code}]{BloomFilter.cpp}
-
-    \subsection{Joblib}\label{subsec:joblib}
-    Joblib è una libreria Python progettata per consentire la parallelizzazione di funzioni e cicli for.
-    La funzione \texttt{Parallel} accetta come input il numero di processori da impiegare e la funzione da parallelizzare.
-    Nell'ambito di questa ricerca, abbiamo adoperato la funzione \texttt{Parallel} per parallelizzare le operazioni di setup
-    e filtraggio del BloomFilter.
-
-    Successivamente, abbiamo analizzato il tempo richiesto dalle funzioni di setup e filtraggio in relazione al numero
-    di processi utilizzati, confrontandolo con il tempo necessario nella versione sequenziale.
-    \lstinputlisting[language=python, firstline=41, lastline=50,label={lst:joblib-code-setup}]{../src/bloom_filter.py}
-    \lstinputlisting[language=python, firstline=68, lastline=80,label={lst:joblib-code-filter}]{../src/bloom_filter.py}
+    \input{parallelizzazione}
 
     \section{Caratteristiche della macchina}\label{sec:caratteristiche-della-macchina}
     La macchina utilizzata per i test ha le seguenti caratteristiche:
@@ -122,8 +95,6 @@
         \item \textbf{RAM}: 16GB
         \item \textbf{Sistema Operativo}: Windows 11
     \end{itemize}
-
-    \clearpage
 
     \section{Test}\label{sec:test}
     \input{risultati}
