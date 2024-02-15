@@ -26,32 +26,37 @@ e la direttiva \texttt{omp critical} per garantire l'accesso esclusivo al vettor
 
 Per quanto riguarda l'operazione di filtraggio, abbiamo ideato due diverse implementazioni.
 \lstinputlisting[language=c++, firstline=62, lastline=74, label={lst:openmp-filter-code}]{BloomFilter.cpp}
-La prima implementazione prevede l'uso della direttiva \texttt{omp parallel for} per parallelizzare la verifica
-della presenza di un'email all'interno del BloomFilter, e della direttiva \texttt{omp atomic} per garantire l'accesso esclusivo
-alla variabile incrementale per il conteggio dei falsi positivi.
+La prima realizzazione prevede l'impiego della direttiva \texttt{omp parallel for} al fine di parallelizzare il processo
+di verifica della presenza di un'email all'interno del BloomFilter.
+In aggiunta, viene utilizzata la direttiva \texttt{omp atomic} per assicurare l'accesso esclusivo alla variabile
+incrementale utilizzata per il conteggio dei falsi positivi.
 
 \lstinputlisting[language=c++, firstline=76, lastline=90, label={lst:openmp-filter2-code}]{BloomFilter.cpp}
-La seconda implementazione prevede invece l'uso di una variabile incrementale per ogni thread, e la somma di queste variabili
-al termine dell'operazione di filtraggio, anch'essa utilizzando la direttiva \texttt{omp atomic} per garantire l'accesso esclusivo
-alla variabile incrementale globale.
-
+La seconda realizzazione, al contrario, impiega una variabile incrementale dedicata per ciascun thread, e la somma di
+tali variabili al termine dell'operazione di filtraggio.
+Inoltre, si fa uso della direttiva \texttt{omp atomic} per assicurare l'accesso esclusivo alla variabile
+incrementale globale durante questa fase.
 Verificheremo in seguito la differenza tra queste due implementazioni.
 
 \subsection{Joblib}\label{subsec:joblib}
-Joblib è una libreria Python progettata per consentire la parallelizzazione di funzioni e cicli for.
-La funzione \texttt{Parallel} accetta come input il numero di processori da impiegare e la funzione da parallelizzare.
-Nell'ambito di questa ricerca, abbiamo adoperato la funzione \texttt{Parallel} per parallelizzare le operazioni di setup
-e filtraggio del BloomFilter.
+Joblib è una libreria Python ideata per abilitare la parallelizzazione di funzioni e cicli for.
+La funzione \texttt{Parallel} prende come input sia il numero di processi da utilizzare che la funzione da parallelizzare.
+Nell'ambito di questo studio, abbiamo sfruttato la funzione \texttt{Parallel} per parallelizzare sia le fasi di
+preparazione (setup) che quelle di filtraggio del BloomFilter.
 
 Successivamente, abbiamo analizzato il tempo richiesto dalle funzioni di setup e filtraggio in relazione al numero
 di processi utilizzati, confrontandolo con il tempo necessario nella versione sequenziale.
 \lstinputlisting[language=python, firstline=41, lastline=50,label={lst:joblib-code-setup}]{../src/bloom_filter.py}
-Come nel caso di Omp, abbiamo parallelizzato l'indicizzazione nel vettore di bit per ogni email, utilizzando la funzione \texttt{Parallel},
-suddividendo il vettore di email in chunk pari al numero di processi impiegati.
+Analogamente all'approccio con Omp, abbiamo parallelizzato l'indicizzazione nel vettore di bit per ciascuna email
+mediante l'utilizzo della funzione \texttt{Parallel}, suddividendo il vettore di email in chunk corrispondenti al
+numero di processi impiegati.
+In aggiunta, il vettore di bit viene memorizzato in memoria attraverso l'utilizzo della funzione \texttt{memmap},
+consentendo sia di condividerlo tra i vari processi che di conservare i risultati ottenuti in memoria.
 
 \lstinputlisting[language=python, firstline=68, lastline=80,label={lst:joblib-code-filter}]{../src/bloom_filter.py}
-Per la fase di filtraggio, abbiamo parallelizzato la verifica della presenza di un'email all'interno del BloomFilter, utilizzando la funzione \texttt{Parallel},
-suddividendo anche in questo caso il vettore di email in chunk pari al numero di processi impiegati.
+Nella fase di filtraggio, abbiamo parallelizzato la verifica della presenza di un'email nel BloomFilter mediante
+l'utilizzo della funzione \texttt{Parallel}.
+Anche in questo caso, abbiamo diviso il vettore di email in chunk corrispondenti al numero di processi impiegati.
 
-Successivamente, abbiamo voluto analizzare l'effetto della dimensione del chunk anche oltre il numero di processi impiegati,
-per valutare se un suo aumento potesse portare o meno un vantaggio sia in termini di tempo che di speedup.
+In seguito, abbiamo voluto esaminare l'impatto della dimensione del chunk anche al di là del numero di processi
+utilizzati, al fine di valutare se un suo aumento potesse o meno offrire vantaggi in termini di tempo e di speedup.

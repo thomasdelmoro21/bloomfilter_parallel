@@ -1,12 +1,16 @@
-I test sono stati effettuati su un dataset da 10000 fino a 10000000 email, con una probabilità di falsi positivi di
-0.10, 0.05 e 0.01.
-Per una prima valutazione dei tempi di esecuzione, dello speedup e del False Positive Rate, prendiamo in considerazione
-il valore di 0.05 per il FPR. Gli altri valori di FPR sono visualizzabili in appendice~\ref{sec:appendice}.
-Il numero di processi presi in considerazione varia da 1 (sequenziale) al massimo numero di processi disponibili sulla
-macchina utilizzata cioè 16.
-Le email sono state generate casualmente tramite il generatore di email contenuto nel file \texttt{email\_generator.py}.
-Poiché i test variano da 10000 a 10000000 email, il numero di funzioni hash sono circa 5 e la dimensione del vettore di
-bit varia da un minimo di 62353 a un massimo di 62352243.
+\section{Test}\label{sec:test}
+I test sono stati condotti su un dataset composto da 10.000 fino a 10.000.000 di email, considerando probabilità di
+falsi positivi pari a 0,10, 0,05 e 0,01.
+Per una valutazione preliminare dei tempi di esecuzione, dello speedup e del False Positive Rate (FPR),
+focalizziamo l'attenzione sul valore di 0,05 per il FPR\@.
+
+Gli altri valori di FPR sono riportati nell'appendice~\ref{sec:appendice}.
+
+Il numero di processi considerati varia da 1 (modalità sequenziale) al massimo numero di processi disponibili sulla
+macchina, ossia 16.
+Le email sono state generate casualmente attraverso il generatore di email presente nel file \texttt{email\_generator.py}.
+Poiché i test coprono un intervallo da 10.000 a 10.000.000 di email, il numero di funzioni hash è approssimativamente
+pari a 5, e le dimensioni del vettore di bit variano da un minimo di 62.353 a un massimo di 62.352.243.
 
 \subsection{OpenMP}\label{subsec:openmp-test}
 \subsubsection{Setup}\label{subsubsec:openmp-setup}
@@ -29,12 +33,13 @@ bit varia da un minimo di 62353 a un massimo di 62352243.
     \endminipage\hfill
 \end{figure}
 
-Nella valutazione del tempo di esecuzione e dello speedup, è evidente come aumentando il numero di processi, il tempo
-di esecuzione diminuisce in modo significativo rispetto alla versione sequenziale, raggiungendo un massimo di 9 con
-l'utilizzo di 16 processi.
-Possiamo notare come all'aumentare del numero di processi l'aumento dello speedup diminuisce, raggiungendo il valore di 8.
-Per quanto riguarda il False Positive Rate, i valori ottenuti si aggirano molto intorno al valore di FPR
-di 0.05 per il quale è stato configurato il BloomFilter.
+Nell'analisi del tempo di esecuzione e dello speedup, emerge chiaramente come incrementando il numero di processi,
+il tempo di esecuzione diminuisce significativamente rispetto alla versione sequenziale, raggiungendo un massimo di 9
+con l'utilizzo di 16 processi.
+È osservabile che all'aumentare del numero di processi, l'incremento dello speedup presenta una riduzione,
+stabilizzandosi al valore di 8.
+Per quanto concerne il False Positive Rate, i risultati ottenuti si collocano attorno al valore di FPR del 0,05, cioè
+il valore per il quale è stato configurato per il BloomFilter.
 
 \subsubsection{Filter}\label{subsubsec:fpr-005-filter}
 \begin{figure}[H]
@@ -56,13 +61,15 @@ di 0.05 per il quale è stato configurato il BloomFilter.
     \endminipage\hfill
 \end{figure}
 
-Come per la fase di setup, anche in questo caso, aumentando il numero di processi, il tempo di esecuzione diminuisce in
-modo significativo rispetto alla versione sequenziale, raggiungendo un massimo di 11 con l'utilizzo di 16 processi.
-In questo caso però, la variazione dello speedup non diminuisce in maniera più significativa rispetto alla fase di setup.
-Il valore di FPR raggiunge il plateau una volta raggiunto un numero sufficiente di email.
+Analogamente alla fase di setup, nell'incrementare il numero di processi, si osserva una significativa riduzione del
+tempo di esecuzione rispetto alla modalità sequenziale, con un picco massimo di 11 utilizzando 16 processi.
+In questa circostanza, tuttavia, la diminuzione dello speedup, al variare dei processi, non è altrettanto marcata
+rispetto alla fase di setup.
+Il valore di FPR raggiunge una sorta di plateau una volta che un numero sufficiente di email è stato raggiunto.
 
 \subsubsection{Confronto Filter}\label{subsubsec:confronto-filter}
-Qui viene preso in considerazione le differenze tra le due versioni implementate del filtro.
+Qui vengono esaminate le differenze tra le due versioni implementate del filtro.
+
 \begin{figure}[H]
     \centering
     \minipage{0.49\textwidth}
@@ -86,8 +93,10 @@ Qui viene preso in considerazione le differenze tra le due versioni implementate
     \endminipage\hfill
 \end{figure}
 
-Come è possibile notare, le due versioni del filtro presentano performance pressoché identiche in termini sia di tempo
-di esecuzione che di speedup.
+Come evidente, le due versioni del filtro mostrano performance praticamente identiche sia in termini di tempo di
+esecuzione che di speedup.
+Pertanto, a causa di questa similitudine prestazionale, prenderemo in considerazione la prima implementazione per
+le analisi successive.
 
 \subsection{Joblib}\label{subsec:joblib-test}
 \subsubsection{Setup}\label{subsubsec:joblib-setup}
@@ -110,10 +119,17 @@ di esecuzione che di speedup.
     \endminipage\hfill
 \end{figure}
 
-I risultati ottenuti con la versione Joblib mostrano come l'aumento del numero di processori
+I risultati ottenuti nella fase di setup con la versione Joblib evidenziano come l'aumento del numero di processori
+conduca a una riduzione del tempo di esecuzione, seppur in maniera meno significativa rispetto alla versione OpenMP\@.
+Lo speedup risulta notevole e superiormente performante rispetto alla versione sequenziale una volta che un certo numero
+di email è stato raggiunto.
+Questo fenomeno è attribuibile al tempo di virtualizzazione dei processi, che in questo caso incide negativamente sul
+tempo di esecuzione per un numero ridotto di email.
+Il valore massimo di speedup raggiunto si assesta intorno a 2.7.
+Anche in questo caso, i valori di FPR (False Positive Rate) si collocano attorno al valore di 0.05.
 
 \subsubsection{Filter}\label{subsubsec:joblib-filter}
-\begin{figure}
+\begin{figure}[H]
     \centering
     \minipage{0.49\textwidth}
     \includegraphics[width=\linewidth]{joblib/005/filter_time_plot}
@@ -132,10 +148,15 @@ I risultati ottenuti con la versione Joblib mostrano come l'aumento del numero d
     \endminipage\hfill
 \end{figure}
 
+Anche nella fase di filtraggio, come nella fase di setup, l'aumento del numero di processi conduce a una riduzione del
+tempo di esecuzione, seppur in maniera meno significativa rispetto alla versione OpenMP\@.
+Infatti il valore massimo di speedup raggiunto si assesta intorno a 2.5.
+Una volta che un certo numero di email è stato raggiunto, il valore di FPR si stabilizza attorno al valore di 0.05.
+
 \subsubsection{Chunks}\label{subsubsec:005-chunks}
-Esploriamo ora l'opzione di eseguire un'operazione di chunking più ampia rispetto al numero di thread disponibili per
-verificare se è possibile migliorare le performance, focalizzandoci esclusivamente sulla versione Joblib.
-I valori di riferimento per i chunks sono 16, 32, 64, 128, 256, 512, 1024, 2048.
+Ora esamineremo la possibilità di eseguire un'operazione di chunking più estesa rispetto al numero di thread disponibili
+nella fase di setup per valutare se è possibile migliorare le prestazioni.
+I valori di riferimento per i chunk sono 16, 32, 64, 128, 256, 512, 1024, 2048.
 
 \begin{figure}[H]
     \centering
@@ -149,34 +170,26 @@ I valori di riferimento per i chunks sono 16, 32, 64, 128, 256, 512, 1024, 2048.
     \endminipage\hfill
 \end{figure}
 
-I risultati ottenuti indicano che l'applicazione dell'operazione di chunking ha determinato miglioramenti
-significativi nelle performance di speedup.
-In particolare, l'aumento del numero di chunk ha contribuito a un miglioramento dello speedup,
+I risultati ottenuti suggeriscono che l'implementazione dell'operazione di chunking ha portato a miglioramenti
+sostanziali nelle performance di speedup.
+In particolare, l'aumento del numero di chunk ha contribuito a un notevole miglioramento dello speedup,
 raggiungendo un massimo di 3.
 Tuttavia, oltre una soglia di 64 chunk, si è verificato un declino nelle performance.
 
-
 \subsection{Confronto}\label{subsec:confronto}
-Per il test di configurazione iniziale, è evidente che la versione sviluppata con OpenMP presenta una performance
-temporale inferiore rispetto alla controparte.
-Al contrario, in termini di speedup, la versione OpenMP supera la versione sviluppata con Joblib,
-raggiungendo uno speedup massimo di 2.70 nella versione Joblib e 9 nella versione OpenMP, utilizzando il massimo
-numero di thread disponibili.
-
-I risultati massimi sono stati ottenuti sfruttando il numero massimo di thread disponibili.
-Nel contesto della versione Joblib, i test iniziali con un numero più elevato di thread mostrano un tempo di esecuzione
-peggiore rispetto alla versione sequenziale, probabilmente a causa del tempo di inizializzazione dei thread.
-Nonostante l'aumento del numero di thread nella versione Joblib, lo speedup si stabilizza intorno al valore di 2.
-
-Va notato che i valori di FPR (False Positive Rate) sono molto simili tra le due versioni.
-
-
-Per il test di filtraggio, è evidente che la versione sviluppata con OpenMP presenta una performance temporale
+\subsection{Setup}\label{subsec:confronto-setup}
+Nel test di configurazione iniziale, è evidente che la versione sviluppata con OpenMP presenta una performance temporale
 inferiore rispetto alla sua controparte.
-Tuttavia, in termini di speedup, la versione OpenMP supera la versione sviluppata con Joblib, raggiungendo un
-massimo di 11 nella versione OpenMP e 2.5 nella versione Joblib, sfruttando il massimo numero di thread disponibili.
+Al contrario, in termini di speedup, la versione OpenMP supera quella sviluppata con Joblib,
+raggiungendo uno speedup massimo di 2.70 nella versione Joblib e 9 nella versione OpenMP,
+sfruttando il massimo numero di thread disponibili.
 
-Anche in questo contesto, i valori di FPR (False Positive Rate) sono praticamente identici tra le due versioni.
+\subsection{Filter}\label{subsec:confronto-filter}
+Nel test di filtraggio, è evidente che la versione sviluppata con OpenMP presenta una performance temporale inferiore
+rispetto alla sua controparte.
+Tuttavia, in termini di speedup, la versione OpenMP supera quella sviluppata con Joblib, raggiungendo un massimo di 11
+nella versione OpenMP e 2.5 nella versione Joblib, sfruttando il massimo numero di thread disponibili.
+I valori di FPR (False Positive Rate) sono praticamente identici tra le due versioni.
 
 
 
