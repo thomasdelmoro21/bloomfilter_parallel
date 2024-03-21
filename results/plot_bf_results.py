@@ -127,5 +127,53 @@ def plot():
         plt.savefig('./csv/joblib/' + str(fpr) + '/chunks_fpr_plot.png')
 
 
+def replot_chunks():
+    fprs = ['001', '005', '010']
+    for fpr in fprs:
+        # Read the chunks.csv file
+        df = pd.read_csv('./csv/joblib/' + str(fpr) + '/chunks.csv', sep=',')
+
+        test_chunks = [(16 * 2 ** i) for i in range(8)]  # Number of chunks to test
+
+        # Plot times Chunks
+        plt.figure()
+        plt.title('Filter: Execution times')
+        plt.plot(df[test_key], df[time_seq_key], '-o', label='Sequential')
+        for i in test_chunks:
+            plt.plot(df[test_key], df[time_par_key + str(i)], '-o', label='{} Chunks'.format(i))
+        plt.xlabel('Selected emails')
+        plt.ylabel('Time (s)')
+        plt.legend()
+        plt.grid()
+        plt.tight_layout()
+        plt.savefig('./csv/joblib/' + str(fpr) + '/chunks_time_plot.png')
+
+        # Plot speedup Filter
+        plt.figure()
+        plt.title('Filter: Speedup')
+        plt.plot(df[test_key], df[time_seq_key] / df[time_seq_key], '-o', label='Sequential')
+        for i in test_chunks:
+            plt.plot(df[test_key], df[speedup_key + str(i)], '-o', label='{} Chunks'.format(i))
+        plt.xlabel('Selected emails')
+        plt.ylabel('Speedup')
+        plt.legend()
+        plt.grid()
+        plt.tight_layout()
+        plt.savefig('./csv/joblib/' + str(fpr) + '/chunks_speedup_plot.png')
+
+        # Plot FPR
+        plt.figure()
+        plt.title('Filter: False Positive Rate')
+        plt.plot(df[test_key], df[fpr_key], '-o')
+        plt.xlabel('Selected emails')
+        plt.ylabel('FPR')
+        plt.grid()
+        plt.tight_layout()
+        plt.savefig('./csv/joblib/' + str(fpr) + '/chunks_fpr_plot.png')
+
+
 if __name__ == '__main__':
-    plot()
+    # plot()
+    replot_chunks()
+
+
